@@ -1,4 +1,4 @@
-# Site — Direito da Saúde
+# Site — Direito à Saúde
 
 Site estático preparado para GitHub Pages.
 
@@ -8,7 +8,7 @@ Site estático preparado para GitHub Pages.
 Substitua:
 
 - `SEUUSUARIO` pelo seu usuário do GitHub.
-- `SEUREPOSITORIO` pelo nome do repositório.
+- `SEUREPOSITORIO` já definido como `direito-saude`.
 - Ajuste textos, cidade, nome do escritório e demais informações que desejar.
 
 ### `script.js`
@@ -104,5 +104,31 @@ Antes de campanhas pagas, vale revisar a versão final conforme as regras de pub
 - WhatsApp: (11) 97396-9770
 
 Ainda falta apenas substituir no `index.html`, `robots.txt` e `sitemap.xml`:
-- `SEUUSUARIO` pelo usuário do GitHub
-- `SEUREPOSITORIO` pelo nome do repositório
+- `SEUUSUARIO` já definido como `jonathanrichenaadv-source`
+- `SEUREPOSITORIO` já definido como `direito-saude`
+
+
+## Configuração final do GitHub Pages
+
+Usuário GitHub:
+`jonathanrichenaadv-source`
+
+Nome de repositório configurado:
+`direito-saude`
+
+URL esperada do site:
+`https://jonathanrichenaadv-source.github.io/direito-saude/`
+
+Se você criar o repositório com outro nome, será necessário atualizar novamente:
+- canonical e og:url no `index.html`
+- `robots.txt`
+- `sitemap.xml`
+
+
+## GitHub configurado
+
+- Usuário: `jonathanrichenaadv-source`
+- Repositório sugerido/configurado: `direito-saude`
+- URL esperada do site: `https://jonathanrichenaadv-source.github.io/direito-saude/`
+
+Se você usar outro nome de repositório, os links de SEO precisarão ser atualizados.
