@@ -1,0 +1,16 @@
+VERSÃO GITHUB PAGES — IMPORTANTE
+
+1. Apague/substitua os arquivos antigos do repositório pela versão deste ZIP.
+2. O arquivo principal é index.html.
+3. Nesta versão, o CSS e o JavaScript usados pelo site estão DENTRO do index.html.
+   Isso evita que o GitHub Pages ou o navegador combine um index.html novo com um styles.css antigo em cache.
+4. Mantenha o arquivo CNAME na raiz.
+5. Em GitHub > Settings > Pages, confirme:
+   - Source: Deploy from a branch
+   - Branch: main / root
+   - Custom domain: jonathanrichenaadv.com.br
+6. Após o deploy, abra o site em uma janela anônima.
+7. Se ainda aparecer a versão antiga, aguarde alguns minutos e use Ctrl+Shift+R.
+
+Arquivos styles-source.css e script-source.js são apenas cópias de referência.
+O site publicado não depende deles.
