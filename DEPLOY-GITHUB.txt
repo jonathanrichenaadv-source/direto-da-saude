@@ -6,3 +6,6 @@ VERSÃO GITHUB PAGES — IMPORTANTE 1. Apague/substitua os arquivos antigos do r
 6. Após o deploy, abra o site em uma janela anônima.
 7. Se ainda aparecer a versão antiga, aguarde alguns minutos e use Ctrl+Shift+R. Arquivos styles-source.css e script-source.js são apenas cópias de referência.
 O site publicado não depende deles. Esta versão foi reposicionada para Direito Trabalhista, Consumidor e Previdenciário. VERSÃO: identidade trabalhista voltada ao trabalhador/reclamante, sem promessa de resultado.
+
+
+ATUALIZAÇÃO MOBILE: ajustes adicionados somente para telas de até 760px. O desktop não foi alterado.
