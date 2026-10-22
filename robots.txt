@@ -1,4 +1,2 @@
 User-agent: *
-Allow: /
-
-Sitemap: https://jonathanrichenaadv.com.br/sitemap.xml
+Allow: / Sitemap: https://jonathanrichenaadv.com.br/sitemap.xml

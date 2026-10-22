@@ -4,7 +4,7 @@
 const WHATSAPP_NUMBER = "5511973969770";
 
 const MESSAGE = encodeURIComponent(
-  "Olá, Dr. Jonathan. Gostaria de solicitar uma análise sobre medicamento de alto custo ou tratamento negado."
+  "Olá, Dr. Jonathan. Gostaria de entender melhor meu caso trabalhista. Posso explicar o que aconteceu?"
 );
 
 document.querySelectorAll(".whatsapp-link").forEach((link) => {
