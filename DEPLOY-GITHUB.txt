@@ -8,4 +8,4 @@ VERSÃO GITHUB PAGES — IMPORTANTE 1. Apague/substitua os arquivos antigos do r
 O site publicado não depende deles. Esta versão foi reposicionada para Direito Trabalhista, Consumidor e Previdenciário. VERSÃO: identidade trabalhista voltada ao trabalhador/reclamante, sem promessa de resultado.
 
 
-ATUALIZAÇÃO MOBILE: ajustes adicionados somente para telas de até 760px. O desktop não foi alterado.
+MOBILE: ajustes responsivos feitos sobre a versão anexada. Desktop preservado.

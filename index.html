@@ -666,104 +666,155 @@ footer {
   }
 }
 
-/* SOBRE O ADVOGADO — APRESENTAÇÃO INTEGRADA */
-.about-presentation-section {
+/* SOBRE O ADVOGADO */
+.about-section {
   background: #ffffff;
-  padding: 72px 0 78px;
 }
 
-.about-presentation-wrap {
-  overflow: hidden;
-  border-radius: 22px;
-  background: #ffffff;
-  box-shadow: 0 20px 54px rgba(11,31,58,.10);
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(300px, .85fr) minmax(0, 1.15fr);
+  gap: 52px;
+  align-items: center;
 }
 
-.about-presentation-image {
+.about-photo-panel {
+  position: relative;
+  background: linear-gradient(180deg, #f6f9fd, #eaf1f8);
+  border-radius: 24px;
+  padding: 14px;
+  box-shadow: 0 18px 46px rgba(11,31,58,.10);
+}
+
+.about-photo-panel::before {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 6px;
+  left: 28px;
+  top: -3px;
+  border-radius: 999px;
+  background: var(--gold);
+}
+
+.about-photo {
   display: block;
   width: 100%;
-  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 50% 40%;
+  border-radius: 17px;
 }
 
-.about-presentation-mobile-copy {
-  display: none;
+.about-copy .section-description {
+  max-width: 760px;
+  margin-bottom: 18px;
 }
 
-@media (max-width: 760px) {
-  .about-presentation-section {
-    padding: 56px 0 62px;
+.about-text {
+  color: #4f5d73;
+  max-width: 780px;
+  margin: 0 0 16px;
+}
+
+.about-facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.about-facts > div {
+  padding: 16px;
+  border: 1px solid #d8e3ef;
+  background: #f6f9fd;
+  border-radius: 12px;
+}
+
+.about-facts strong {
+  display: block;
+  color: var(--navy);
+  margin-bottom: 4px;
+  font-size: .9rem;
+}
+
+.about-facts span {
+  color: #5b687c;
+  font-size: .86rem;
+}
+
+.about-actions {
+  margin-top: 24px;
+}
+
+@media (max-width: 980px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 
-  .about-presentation-wrap {
-    border-radius: 16px;
+  .about-photo-panel {
+    max-width: 520px;
   }
+}
 
-  .about-presentation-image {
-    display: none;
-  }
-
-  .about-presentation-mobile-copy {
-    display: block;
-    padding: 8px 2px 0;
-  }
-
-  .about-presentation-mobile-copy .section-description {
-    max-width: 100%;
-  }
-
-  .about-presentation-mobile-copy .about-actions {
-    margin-top: 22px;
+@media (max-width: 700px) {
+  .about-facts {
+    grid-template-columns: 1fr;
   }
 }
 
 
 /* =========================================================
-   OTIMIZAÇÃO EXCLUSIVA PARA CELULAR
-   Nenhuma regra abaixo altera o layout desktop.
+   MOBILE REFINADO — baseado na versão anexada
+   Todas as regras abaixo se limitam a telas móveis.
+   O desktop permanece inalterado.
    ========================================================= */
-.mobile-header-cta,
-.about-mobile-photo {
+.mobile-header-cta {
   display: none;
 }
 
 @media (max-width: 760px) {
   html {
-    scroll-padding-top: 72px;
+    scroll-padding-top: 70px;
   }
 
   body {
     overflow-x: hidden;
+    background: #F7F9FC;
   }
 
   .container {
     width: calc(100% - 24px);
   }
 
-  /* Cabeçalho mais compacto e funcional */
+  /* Header */
   .topbar {
     background: rgba(11,31,58,.985);
+    box-shadow: 0 5px 18px rgba(11,31,58,.08);
   }
 
   .nav {
     min-height: 68px;
-    gap: 10px;
+    gap: 8px;
   }
 
   .brand-integrated {
     gap: 8px;
     min-width: 0;
+    flex: 1 1 auto;
   }
 
   .brand-monogram {
-    min-width: 40px;
+    min-width: 39px;
   }
 
   .brand-j {
-    font-size: 1.9rem;
+    font-size: 1.88rem;
   }
 
   .brand-r {
-    font-size: 1.86rem;
+    font-size: 1.82rem;
   }
 
   .brand-lockup {
@@ -772,54 +823,64 @@ footer {
 
   .brand-lockup strong {
     font-size: .94rem;
+    line-height: 1;
     white-space: nowrap;
   }
 
   .brand-subline {
-    font-size: .46rem;
-    letter-spacing: .09em;
+    margin-top: 2px;
+    font-size: .45rem;
+    letter-spacing: .085em;
     white-space: nowrap;
   }
 
+  .menu,
   .topbar .btn-sm {
     display: none;
   }
 
   .mobile-header-cta {
     display: inline-flex;
+    flex: 0 0 auto;
     align-items: center;
     justify-content: center;
-    min-height: 36px;
-    padding: 0 11px;
-    border-radius: 8px;
+    min-height: 35px;
+    padding: 0 10px;
     border: 1px solid rgba(255,255,255,.34);
+    border-radius: 8px;
     color: #fff;
-    font-size: .74rem;
+    background: rgba(255,255,255,.06);
+    font-size: .72rem;
     font-weight: 700;
     white-space: nowrap;
   }
 
-  /* Hero: leitura rápida sem ocupar duas telas */
+  /* Hero */
   .hero {
-    padding: 44px 0 48px;
+    padding: 42px 0 48px;
   }
 
   .hero-grid {
+    grid-template-columns: 1fr;
     gap: 26px;
+  }
+
+  .hero::before {
+    display: none;
   }
 
   .hero .eyebrow {
     margin-bottom: 11px;
-    font-size: .65rem;
+    font-size: .64rem;
     line-height: 1.35;
-    letter-spacing: .11em;
+    letter-spacing: .105em;
   }
 
   h1 {
-    font-size: clamp(2.35rem, 11.8vw, 3.15rem);
+    font-size: clamp(2.25rem, 11vw, 3.05rem);
     line-height: 1.015;
     letter-spacing: -.038em;
-    margin-bottom: 18px;
+    margin-bottom: 17px;
   }
 
   .lead {
@@ -831,29 +892,32 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     gap: 9px;
-    margin-top: 22px;
+    margin-top: 21px;
   }
 
   .hero-actions .btn {
     width: 100%;
     min-height: 48px;
-    padding-inline: 16px;
+    padding: 0 15px;
   }
 
   .trust-strip {
-    margin-top: 25px;
-    border: 1px solid #d4dfeb;
+    grid-template-columns: 1fr;
+    margin-top: 24px;
+    border: 1px solid #D5E0EC;
     border-radius: 13px;
     overflow: hidden;
-    background: rgba(255,255,255,.62);
+    background: rgba(255,255,255,.64);
   }
 
-  .trust-item {
+  .trust-item,
+  .trust-item + .trust-item {
     padding: 12px 14px;
+    border-left: 0;
   }
 
   .trust-item + .trust-item {
-    padding-left: 14px;
+    border-top: 1px solid #D5E0EC;
   }
 
   .trust-item strong {
@@ -865,114 +929,129 @@ footer {
   }
 
   .disclaimer {
-    margin-top: 14px;
-    font-size: .72rem;
-    line-height: 1.5;
+    margin-top: 13px;
+    font-size: .71rem;
+    line-height: 1.48;
   }
 
-  /* Painel escuro do hero */
+  /* Hero card */
   .hero-card {
-    padding: 23px 18px 20px;
+    max-width: none;
+    padding: 22px 17px 19px;
     border-radius: 15px;
   }
 
   .hero-card::before {
-    left: 18px;
+    left: 17px;
     width: 62px;
   }
 
+  .hero-card .section-kicker {
+    margin-top: 5px;
+    font-size: .62rem;
+  }
+
   .hero-card h2 {
-    font-size: 1.65rem;
-    margin-top: 7px;
+    font-size: 1.62rem;
+    line-height: 1.08;
+    margin: 7px 0 8px;
   }
 
   .hero-card > p {
-    font-size: .9rem;
-    line-height: 1.5;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
+    font-size: .88rem;
+    line-height: 1.48;
+  }
+
+  .problem-list {
+    border-radius: 10px;
+    overflow: hidden;
   }
 
   .problem-item {
-    grid-template-columns: 25px 1fr;
-    padding: 12px 11px;
+    grid-template-columns: 23px 1fr;
     gap: 8px;
+    padding: 11px 10px;
   }
 
   .problem-item span {
-    width: 22px;
-    height: 22px;
-    font-size: .68rem;
+    width: 21px;
+    height: 21px;
+    font-size: .66rem;
   }
 
   .problem-item p {
-    font-size: .84rem;
-    line-height: 1.43;
+    font-size: .82rem;
+    line-height: 1.42;
   }
 
   .hero-card .mini-cta {
-    font-size: .78rem;
+    margin-top: 14px;
+    font-size: .77rem;
     line-height: 1.45;
-    margin-top: 15px;
   }
 
-  /* Hierarquia e respiro das seções */
+  /* General section typography */
   .section {
-    padding: 54px 0;
+    padding: 52px 0;
   }
 
   .section-heading {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
   }
 
   .section-kicker,
   .cta-kicker {
-    font-size: .65rem;
-    letter-spacing: .12em;
+    font-size: .64rem;
+    letter-spacing: .11em;
   }
 
   .section-title {
-    font-size: clamp(1.9rem, 9vw, 2.45rem);
+    font-size: clamp(1.85rem, 8.6vw, 2.35rem);
     line-height: 1.06;
-    margin-top: 6px;
+    margin: 6px 0 9px;
   }
 
   .section-subtitle {
-    font-size: .98rem;
-    line-height: 1.45;
+    font-size: .96rem;
+    line-height: 1.42;
   }
 
   .section-description {
-    font-size: .94rem;
-    line-height: 1.58;
+    font-size: .92rem;
+    line-height: 1.56;
   }
 
-  /* Cards do trabalhador */
+  /* Worker issue cards */
   .worker-grid {
-    gap: 10px;
+    grid-template-columns: 1fr;
+    gap: 9px;
   }
 
   .worker-card {
     min-height: 0;
-    padding: 19px 18px;
-    border-radius: 13px;
+    padding: 18px 17px;
+    border-radius: 12px;
   }
 
   .worker-card .num {
-    font-size: 1.4rem;
-    margin-bottom: 11px;
+    margin-bottom: 9px;
+    font-size: 1.35rem;
   }
 
   .worker-card h3 {
-    font-size: 1.08rem;
+    font-size: 1.04rem;
+    margin-bottom: 5px;
   }
 
   .worker-card p {
-    font-size: .88rem;
-    line-height: 1.5;
+    font-size: .86rem;
+    line-height: 1.48;
   }
 
-  /* Bloco trabalhista escuro */
+  /* Main labor section */
   .labor-grid {
+    grid-template-columns: 1fr;
     border-radius: 13px;
     overflow: hidden;
   }
@@ -981,24 +1060,32 @@ footer {
   .labor-item:nth-child(2n),
   .labor-item:nth-last-child(-n+2) {
     min-height: 0;
-    padding: 19px 17px;
+    padding: 18px 16px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+  }
+
+  .labor-item:last-child {
+    border-bottom: 0;
   }
 
   .labor-item .tag {
-    font-size: .63rem;
+    font-size: .61rem;
   }
 
   .labor-item h3 {
-    font-size: 1.28rem;
+    font-size: 1.23rem;
+    margin: 6px 0;
   }
 
   .labor-item p {
-    font-size: .87rem;
-    line-height: 1.5;
+    font-size: .85rem;
+    line-height: 1.48;
   }
 
-  /* Etapas passam a parecer cartões individuais */
+  /* Atendimento steps */
   .steps {
+    grid-template-columns: 1fr;
     border: 0;
     gap: 9px;
   }
@@ -1007,128 +1094,166 @@ footer {
   .step + .step,
   .step:nth-child(3),
   .step:nth-child(4) {
-    padding: 18px;
+    padding: 17px;
     border: 1px solid var(--line);
     border-radius: 12px;
     background: #fff;
   }
 
   .step > span {
-    font-size: 1.48rem;
-    margin-bottom: 7px;
+    font-size: 1.42rem;
+    margin-bottom: 6px;
   }
 
   .step h3 {
-    font-size: 1.05rem;
+    font-size: 1.02rem;
   }
 
   .step p {
-    font-size: .86rem;
-    line-height: 1.5;
+    font-size: .84rem;
+    line-height: 1.48;
   }
 
-  /* Sobre o advogado: mantém a arte no desktop,
-     mas usa foto + conteúdo nativo no celular */
-  .about-presentation-section {
-    padding: 54px 0;
+  /* Sobre o advogado: photo first, centered, then text */
+  .about-section {
+    padding-top: 50px;
+    padding-bottom: 52px;
   }
 
-  .about-presentation-wrap {
-    display: none;
-  }
-
-  .about-presentation-mobile-copy {
-    display: block;
-    padding: 0;
-  }
-
-  .about-mobile-photo {
-    display: block;
-    width: min(100%, 360px);
-    margin: 0 auto 24px;
-    aspect-ratio: 4 / 5;
-    object-fit: cover;
-    object-position: center top;
-    border-radius: 18px;
-    box-shadow: 0 15px 34px rgba(11,31,58,.13);
-  }
-
-  .about-presentation-mobile-copy .section-title {
-    margin-bottom: 7px;
-  }
-
-  .about-presentation-mobile-copy .section-description {
-    font-size: .94rem;
-    line-height: 1.6;
-  }
-
-  .about-presentation-mobile-copy .about-actions {
-    margin-top: 19px;
-  }
-
-  .about-presentation-mobile-copy .btn {
-    width: 100%;
-  }
-
-  /* Áreas complementares */
-  .secondary-areas {
-    gap: 10px;
-  }
-
-  .secondary-card {
-    padding: 20px 18px;
-    border-radius: 13px;
-  }
-
-  .secondary-card h3 {
-    font-size: 1.35rem;
-  }
-
-  .secondary-card p {
-    font-size: .89rem;
-    line-height: 1.52;
-  }
-
-  /* Documentos */
-  .docs-grid {
+  .about-grid {
+    grid-template-columns: 1fr;
     gap: 25px;
   }
 
-  .document-box {
-    padding: 18px 14px;
+  .about-photo-panel {
+    width: min(100%, 330px);
+    margin: 0 auto;
+    padding: 9px;
+    border-radius: 18px;
+    box-shadow: 0 14px 34px rgba(11,31,58,.11);
+  }
+
+  .about-photo-panel::before {
+    width: 76px;
+    height: 4px;
+    left: 20px;
+  }
+
+  .about-photo {
+    aspect-ratio: 4 / 5;
+    object-position: 50% 35%;
     border-radius: 13px;
   }
 
+  .about-copy .section-title {
+    margin-bottom: 5px;
+  }
+
+  .about-copy .section-description,
+  .about-text {
+    font-size: .9rem;
+    line-height: 1.56;
+  }
+
+  .about-text {
+    margin-bottom: 12px;
+  }
+
+  .about-facts {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-top: 18px;
+  }
+
+  .about-facts > div {
+    padding: 12px 13px;
+    border-radius: 10px;
+  }
+
+  .about-facts strong {
+    font-size: .82rem;
+  }
+
+  .about-facts span {
+    font-size: .8rem;
+  }
+
+  .about-actions {
+    margin-top: 18px;
+  }
+
+  .about-actions .btn {
+    width: 100%;
+  }
+
+  /* Secondary practice areas */
+  .secondary-areas {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
+  .secondary-card {
+    padding: 18px 17px;
+    border-radius: 12px;
+  }
+
+  .secondary-card h3 {
+    font-size: 1.28rem;
+    margin-bottom: 6px;
+  }
+
+  .secondary-card p {
+    font-size: .86rem;
+    line-height: 1.48;
+  }
+
+  /* Documents */
+  .docs-grid {
+    grid-template-columns: 1fr;
+    gap: 23px;
+  }
+
+  .docs-grid .btn {
+    width: 100%;
+  }
+
+  .document-box {
+    padding: 17px 13px;
+    border-radius: 12px;
+  }
+
   .document-box li {
-    padding: 11px 10px 11px 27px;
-    font-size: .87rem;
-    line-height: 1.45;
+    padding: 10px 9px 10px 26px;
+    font-size: .84rem;
+    line-height: 1.43;
   }
 
   .document-box li::before {
-    left: 8px;
-    top: 12px;
+    left: 7px;
+    top: 11px;
   }
 
   /* CTA */
   .cta-section {
-    padding-bottom: 54px;
+    padding-bottom: 52px;
   }
 
   .cta-box {
-    padding: 25px 20px;
-    gap: 20px;
-    border-radius: 15px;
+    padding: 24px 19px;
+    gap: 18px;
+    border-radius: 14px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .cta-box h2 {
-    font-size: 1.85rem;
-    margin-top: 6px;
+    font-size: 1.78rem;
+    margin: 5px 0 8px;
   }
 
   .cta-box p {
-    font-size: .9rem;
-    line-height: 1.55;
+    font-size: .88rem;
+    line-height: 1.52;
   }
 
   .cta-box .btn {
@@ -1137,57 +1262,60 @@ footer {
 
   /* FAQ */
   .faq {
-    gap: 8px;
+    gap: 7px;
   }
 
   details {
-    padding: 15px 16px;
+    padding: 14px 15px;
+    border-radius: 10px;
   }
 
   summary {
-    font-size: .91rem;
+    font-size: .88rem;
     line-height: 1.4;
   }
 
   details p {
-    font-size: .86rem;
-    line-height: 1.5;
+    font-size: .84rem;
+    line-height: 1.48;
   }
 
-  /* Contato */
+  /* Contact */
   .contact-section {
-    padding: 54px 0;
+    padding: 52px 0;
   }
 
   .contact-grid {
-    gap: 24px;
+    grid-template-columns: 1fr;
+    gap: 22px;
   }
 
   .contact-card {
-    padding: 21px 18px;
-    border-radius: 14px;
+    padding: 19px 17px;
+    border-radius: 13px;
   }
 
   .contact-card h3 {
-    font-size: 1.4rem;
+    font-size: 1.35rem;
   }
 
   .contact-card p {
-    font-size: .89rem;
-    line-height: 1.52;
+    font-size: .86rem;
+    line-height: 1.5;
   }
 
   .contact-card .btn {
     width: 100%;
   }
 
-  /* Rodapé */
+  /* Footer */
   footer {
-    padding: 28px 0;
+    padding: 27px 0;
   }
 
   .footer-content {
-    gap: 18px;
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .footer-brand {
@@ -1196,31 +1324,31 @@ footer {
 
   .footer-lockup p,
   .footer-info p {
-    font-size: .76rem;
-    line-height: 1.45;
+    font-size: .74rem;
+    line-height: 1.43;
   }
 }
 
 @media (max-width: 380px) {
   .container {
-    width: calc(100% - 20px);
+    width: calc(100% - 18px);
   }
 
   .brand-lockup strong {
-    font-size: .86rem;
+    font-size: .84rem;
   }
 
   .brand-subline {
-    font-size: .42rem;
+    font-size: .4rem;
   }
 
   .mobile-header-cta {
-    padding-inline: 8px;
-    font-size: .69rem;
+    padding: 0 7px;
+    font-size: .67rem;
   }
 
   h1 {
-    font-size: 2.2rem;
+    font-size: 2.12rem;
   }
 }
 
@@ -1459,29 +1587,49 @@ footer {
     </section>
 
     
-    <section id="sobre-advogado" class="section about-presentation-section">
-      <div class="container">
-        <div class="about-presentation-wrap">
-          <img
-            src="sobre-jonathan-richena.png"
-            alt="Sobre o advogado Jonathan Frederick Richena, OAB/SP 544.387, com atuação em Direito Trabalhista, Consumidor e Previdenciário"
-            class="about-presentation-image"
-          >
+    <section id="sobre-advogado" class="section about-section">
+      <div class="container about-grid">
+        <div class="about-photo-panel">
+          <img src="jonathan-richena-sobre-advogado.jpg" alt="Jonathan Richena, advogado OAB/SP 544.387" class="about-photo">
         </div>
-        <div class="about-presentation-mobile-copy">
-          <img
-            src="jonathan-richena-sobre-advogado.jpg"
-            alt="Jonathan Richena, advogado OAB/SP 544.387"
-            class="about-mobile-photo"
-          >
+
+        <div class="about-copy">
           <span class="section-kicker">SOBRE O ADVOGADO</span>
-          <h2 class="section-title">Jonathan Frederick Richena</h2>
+          <h2 class="section-title">Jonathan Richena</h2>
           <p class="section-subtitle">Advogado · OAB/SP 544.387</p>
+
           <p class="section-description">
-            Atuação voltada principalmente ao Direito Trabalhista, com atendimento também em
-            Direito do Consumidor e Direito Previdenciário. O trabalho é pautado por análise
-            individualizada, orientação clara e acompanhamento próximo de cada caso.
+            Sou advogado com atuação voltada principalmente à defesa dos direitos dos trabalhadores,
+            além de atender demandas de Direito do Consumidor e Direito Previdenciário.
           </p>
+
+          <p class="about-text">
+            Minha atuação parte da análise individualizada de cada caso, com atenção aos documentos,
+            às provas e às particularidades da relação jurídica. No Direito Trabalhista, o foco está
+            em orientar e representar trabalhadores em questões como verbas rescisórias, horas extras,
+            FGTS, reconhecimento de vínculo, rescisão indireta, assédio, acidentes e doenças relacionadas ao trabalho.
+          </p>
+
+          <p class="about-text">
+            O atendimento é realizado de forma clara e objetiva, buscando que o cliente compreenda
+            o seu caso, as medidas juridicamente possíveis e os riscos envolvidos antes de qualquer decisão.
+          </p>
+
+          <div class="about-facts">
+            <div>
+              <strong>Atuação principal</strong>
+              <span>Direito Trabalhista</span>
+            </div>
+            <div>
+              <strong>Áreas complementares</strong>
+              <span>Consumidor e Previdenciário</span>
+            </div>
+            <div>
+              <strong>Atendimento</strong>
+              <span>São Paulo e online</span>
+            </div>
+          </div>
+
           <div class="about-actions">
             <a class="btn whatsapp-link" href="#" rel="noopener">Falar diretamente com o advogado</a>
           </div>
