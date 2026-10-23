@@ -1797,9 +1797,21 @@ const MESSAGE = encodeURIComponent(
   "Olá, Dr. Jonathan. Gostaria de entender melhor meu caso trabalhista. Posso explicar o que aconteceu?"
 );
 
+// Google Ads: registrar a conversão apenas quando um link do WhatsApp for clicado.
+// Esta conversão mede cliques, não mensagens enviadas nem contratos firmados.
+// A tag geral do Google Ads já está instalada no <head> de index.html.
 document.querySelectorAll(".whatsapp-link").forEach((link) => {
   link.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${MESSAGE}`;
   link.target = "_blank";
+  link.addEventListener("click", () => {
+    if (typeof window.gtag === "function") {
+      window.gtag("event", "conversion", {
+        send_to: "AW-18434877988/W7GyCMykhvAcEKTUt9ZE",
+        value: 1.0,
+        currency: "BRL"
+      });
+    }
+  });
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
