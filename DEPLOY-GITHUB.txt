@@ -9,3 +9,6 @@ O site publicado não depende deles. Esta versão foi reposicionada para Direito
 
 
 MOBILE: ajustes responsivos feitos sobre a versão anexada. Desktop preservado.
+
+
+SELEÇÃO/CÓPIA: desativadas no site; cursor de texto ocultado. Links e botões permanecem ativos.

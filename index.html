@@ -1420,6 +1420,37 @@ footer {
   }
 }
 
+
+
+/* PROTEÇÃO DE INTERAÇÃO: sem cursor de texto, seleção ou cópia */
+html, body, body * {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  -webkit-touch-callout: none !important;
+  caret-color: transparent !important;
+}
+
+::selection {
+  background: transparent !important;
+  color: inherit !important;
+}
+
+::-moz-selection {
+  background: transparent !important;
+  color: inherit !important;
+}
+
+a, button, summary, [role="button"] {
+  cursor: pointer;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
 </style>
 
   <script type="application/ld+json">
@@ -1923,6 +1954,24 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
   });
 });
 
-  </script>
+  
+
+// Impede seleção, cópia, recorte, colagem, menu de contexto e arraste de imagens.
+// Links, botões, navegação e WhatsApp continuam funcionando normalmente.
+["copy", "cut", "paste", "contextmenu", "selectstart", "dragstart"].forEach((eventName) => {
+  document.addEventListener(eventName, (event) => {
+    event.preventDefault();
+  }, { capture: true });
+});
+
+// Remove seleções que algum navegador consiga iniciar mesmo com CSS.
+document.addEventListener("selectionchange", () => {
+  const selection = window.getSelection?.();
+  if (selection && !selection.isCollapsed) {
+    selection.removeAllRanges();
+  }
+});
+
+</script>
 </body>
 </html>

@@ -63,3 +63,20 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     smoothScrollTo(targetY, 720);
   });
 });
+
+
+// Impede seleção, cópia, recorte, colagem, menu de contexto e arraste de imagens.
+// Links, botões, navegação e WhatsApp continuam funcionando normalmente.
+["copy", "cut", "paste", "contextmenu", "selectstart", "dragstart"].forEach((eventName) => {
+  document.addEventListener(eventName, (event) => {
+    event.preventDefault();
+  }, { capture: true });
+});
+
+// Remove seleções que algum navegador consiga iniciar mesmo com CSS.
+document.addEventListener("selectionchange", () => {
+  const selection = window.getSelection?.();
+  if (selection && !selection.isCollapsed) {
+    selection.removeAllRanges();
+  }
+});

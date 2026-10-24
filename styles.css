@@ -1385,3 +1385,33 @@ footer {
     box-shadow: 0 6px 18px rgba(11,31,58,.045);
   }
 }
+
+
+/* PROTEÇÃO DE INTERAÇÃO: sem cursor de texto, seleção ou cópia */
+html, body, body * {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  -webkit-touch-callout: none !important;
+  caret-color: transparent !important;
+}
+
+::selection {
+  background: transparent !important;
+  color: inherit !important;
+}
+
+::-moz-selection {
+  background: transparent !important;
+  color: inherit !important;
+}
+
+a, button, summary, [role="button"] {
+  cursor: pointer;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+}
