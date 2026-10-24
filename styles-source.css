@@ -677,9 +677,9 @@ footer {
 .about-photo {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
-  object-position: 50% 40%;
+  object-position: 50% 50%;
   border-radius: 17px;
 }
 
@@ -1117,8 +1117,8 @@ footer {
   }
 
   .about-photo {
-    aspect-ratio: 4 / 5;
-    object-position: 50% 35%;
+    aspect-ratio: 3 / 4;
+    object-position: 50% 50%;
     border-radius: 13px;
   }
 
@@ -1326,5 +1326,62 @@ footer {
 
   h1 {
     font-size: 2.12rem;
+  }
+}
+
+
+/* AJUSTE MOBILE FINAL — 24/10/2026 */
+@media (max-width: 760px) {
+  body { font-size: 16px; }
+
+  .hero > .container,
+  .section > .container,
+  .contact-section > .container,
+  .cta-section > .container {
+    max-width: 100%;
+  }
+
+  .hero .lead,
+  .section-description,
+  .about-text,
+  .secondary-card p,
+  .contact-card p,
+  details p {
+    color: #46566b;
+  }
+
+  .section-dark .section-description,
+  .labor-item p,
+  .hero-card > p,
+  .hero-card .mini-cta {
+    color: #eef5fc;
+  }
+
+  .about-photo-panel {
+    width: min(88vw, 350px);
+  }
+
+  .about-photo {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .btn,
+  .mobile-header-cta {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .btn {
+    min-height: 50px;
+  }
+
+  .worker-card,
+  .secondary-card,
+  .contact-card,
+  details,
+  .step {
+    box-shadow: 0 6px 18px rgba(11,31,58,.045);
   }
 }
