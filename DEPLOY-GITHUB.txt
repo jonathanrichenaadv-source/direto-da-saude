@@ -12,3 +12,21 @@ MOBILE: ajustes responsivos feitos sobre a versão anexada. Desktop preservado.
 
 
 SELEÇÃO/CÓPIA: desativadas no site; cursor de texto ocultado. Links e botões permanecem ativos.
+
+
+ATUALIZAÇÃO 26/10/2026: primeira tela otimizada para conversão; CTA do WhatsApp e rastreamento por origem refinados; mobile revisado.
+
+
+Atualização 26/10/2026: refinamento visual premium, nova seção de atuação em alto contraste e apresentação pessoal reescrita.
+
+
+Atualização V6: hero limpo abaixo do CTA e seção Sobre revisada para destacar atendimento direto com Jonathan Richena.
+
+
+Atualização V8: seções Dúvidas Frequentes e Contato refinadas visualmente.
+
+
+Atualização V9: contato simplificado e FAQ trabalhista revisado com perguntas de alta intenção de busca, respostas específicas e FAQPage estruturado para SEO.
+
+
+Atualização V11: delimitadores simplificados, sem molduras grandes ou barras douradas; seção Sobre limpa.

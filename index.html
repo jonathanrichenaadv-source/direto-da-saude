@@ -14,16 +14,16 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jonathan Richena Advocacia | Advogado Trabalhista em São Paulo</title>
-  <meta name="description" content="Atuação voltada à defesa do trabalhador em demissões, verbas rescisórias, horas extras, rescisão indireta, FGTS, vínculo, acidentes e doenças ocupacionais. Atendimento em São Paulo e online.">
+  <title>Jonathan Richena Advocacia | Advogado Trabalhista Especialista</title>
+  <meta name="description" content="Atuação voltada à defesa do trabalhador em demissões, verbas rescisórias, horas extras, rescisão indireta, FGTS, vínculo, acidentes e doenças ocupacionais. Atendimento online em todo o Brasil.">
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#0B1F3A">
-  <meta name="site-build" content="2026-09-07-github-safe-v1">
+  <meta name="site-build" content="2026-10-27-clean-hero-direct-contact-v6">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230B1F3A'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Georgia' font-size='31' font-weight='700' fill='white'%3EJR%3C/text%3E%3C/svg%3E">
 
   <link rel="canonical" href="https://jonathanrichenaadv.com.br/">
 
-  <meta property="og:title" content="Jonathan Richena Advocacia | Direito Trabalhista">
+  <meta property="og:title" content="Jonathan Richena Advocacia | Advogado Trabalhista Especialista">
   <meta property="og:description" content="Atuação jurídica voltada ao trabalhador, com análise individualizada de conflitos e direitos decorrentes da relação de emprego.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jonathanrichenaadv.com.br/">
@@ -362,6 +362,91 @@ h3 { color: var(--navy); font-size: 1.18rem; line-height: 1.3; margin-bottom: 9p
   color: #D9E5F3;
   font-size: .86rem;
   font-weight: 500;
+}
+
+
+/* HERO — CONVERSÃO / PRIMEIRA DOBRA */
+.hero-copy {
+  min-width: 0;
+}
+
+.hero-question {
+  margin: -7px 0 13px;
+  color: var(--navy);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(1.32rem, 2vw, 1.72rem);
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.hero-credentials {
+  margin-top: 24px;
+  max-width: 680px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 14px 16px;
+  border: 1px solid #CFDBE7;
+  border-radius: 12px;
+  background: rgba(255,255,255,.72);
+  box-shadow: 0 8px 22px rgba(11,31,58,.05);
+}
+
+.hero-credentials > div {
+  display: grid;
+  gap: 2px;
+}
+
+.hero-credentials strong {
+  color: var(--navy);
+  font-size: .92rem;
+  line-height: 1.35;
+}
+
+.hero-credentials span:not(.hero-credential-mark) {
+  color: #59677B;
+  font-size: .82rem;
+}
+
+.hero-credential-mark {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: var(--navy);
+  color: var(--gold);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 700;
+  letter-spacing: -.06em;
+}
+
+.hero-problem-list .problem-item {
+  min-height: 58px;
+  align-items: center;
+}
+
+.hero-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 19px;
+  color: #FFFFFF;
+  font-size: .88rem;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255,255,255,.34);
+  padding-bottom: 3px;
+}
+
+.hero-card-link span {
+  color: #F0D6A7;
+  transition: transform .18s ease;
+}
+
+.hero-card-link:hover span {
+  transform: translateX(3px);
 }
 
 /* CONTENT SECTIONS */
@@ -1451,6 +1536,1165 @@ img {
   user-drag: none;
 }
 
+
+/* AJUSTE DE CONVERSÃO — PRIMEIRA TELA / MOBILE */
+@media (max-width: 760px) {
+  .hero {
+    padding-top: 35px;
+  }
+
+  .hero .eyebrow {
+    margin-bottom: 9px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.28rem, 11vw, 3rem);
+    margin-bottom: 12px;
+  }
+
+  .hero-question {
+    margin: 0 0 10px;
+    font-size: 1.16rem;
+    line-height: 1.3;
+  }
+
+  .hero .lead {
+    font-size: .94rem;
+    line-height: 1.55;
+  }
+
+  .hero-actions {
+    margin-top: 19px;
+  }
+
+  .hero-actions .btn {
+    min-height: 51px;
+    font-size: .91rem;
+  }
+
+  .hero-credentials {
+    margin-top: 17px;
+    padding: 12px 13px;
+    gap: 12px;
+  }
+
+  .hero-credentials strong {
+    font-size: .82rem;
+  }
+
+  .hero-credentials span:not(.hero-credential-mark) {
+    font-size: .74rem;
+  }
+
+  .hero-credential-mark {
+    width: 38px;
+    height: 38px;
+    font-size: .9rem;
+  }
+
+  .hero .disclaimer {
+    margin-top: 11px;
+  }
+
+  .hero-card {
+    margin-top: 1px;
+  }
+
+  .hero-card h2 {
+    font-size: 1.48rem;
+  }
+
+  .hero-problem-list .problem-item {
+    min-height: 49px;
+  }
+
+  .hero-card-link {
+    margin-top: 15px;
+    font-size: .8rem;
+  }
+}
+
+
+/* ===== REFINAMENTO PREMIUM / CONVERSÃO ===== */
+.hero-conversion {
+  position: relative;
+  padding: 82px 0 74px;
+  background:
+    radial-gradient(circle at 84% 12%, rgba(199,161,90,.10), transparent 25%),
+    radial-gradient(circle at 8% 88%, rgba(31,95,175,.08), transparent 28%),
+    linear-gradient(135deg,#fbfcfe 0%,#eef4fb 62%,#f8fafc 100%);
+}
+.hero-conversion::after {
+  content:"";
+  position:absolute;
+  inset:auto 0 0;
+  height:1px;
+  background:linear-gradient(90deg,transparent,#d9e3ee 20%,#d9e3ee 80%,transparent);
+}
+.hero-grid-conversion { grid-template-columns:minmax(0,1.08fr) minmax(360px,.92fr); gap:68px; align-items:center; }
+.hero-copy-conversion .eyebrow { color:var(--blue-dark); }
+.hero-copy-conversion h1 { max-width:720px; margin:0 0 18px; font-size:clamp(3.1rem,5.6vw,5.25rem); }
+.hero-title-accent {
+  position:relative;
+  display:inline-block;
+  color:var(--blue);
+}
+.hero-title-accent::after {
+  content:"";
+  position:absolute;
+  left:.03em;
+  right:.01em;
+  bottom:.02em;
+  height:.08em;
+  border-radius:999px;
+  background:linear-gradient(90deg,var(--gold),rgba(199,161,90,.25));
+  z-index:-1;
+}
+.hero-question { max-width:720px; margin:0 0 9px; color:var(--navy); font-size:1.23rem; line-height:1.45; font-weight:750; }
+.hero-lead-conversion { max-width:705px; font-size:1.04rem; line-height:1.7; color:#4a596f; }
+.hero-actions-conversion { margin-top:26px; }
+.btn-primary-strong { min-height:55px; padding-inline:27px; border-radius:11px; box-shadow:0 14px 30px rgba(31,95,175,.18); }
+.hero-id-line { display:flex; flex-wrap:wrap; gap:8px 18px; align-items:center; margin-top:21px; padding-top:18px; border-top:1px solid #d5e0eb; color:#4c5b70; font-size:.87rem; }
+.hero-id-line strong { color:var(--navy); font-size:.93rem; }
+.hero-trust-row { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+.hero-trust-row span { padding:6px 9px; border:1px solid #d8e2ed; border-radius:999px; background:rgba(255,255,255,.72); color:#536176; font-size:.72rem; font-weight:700; }
+.hero-legal-note { margin:10px 0 0; color:#737f91; font-size:.72rem; }
+.hero-focus-card { position:relative; overflow:hidden; background:linear-gradient(145deg,#0b1f3a 0%,#102d50 100%); color:#fff; padding:33px; border-radius:22px; box-shadow:0 28px 64px rgba(11,31,58,.19); border:1px solid rgba(255,255,255,.08); }
+.hero-focus-card::before { content:""; position:absolute; width:170px; height:170px; border:1px solid rgba(199,161,90,.17); border-radius:50%; right:-86px; top:-85px; }
+.hero-focus-card::after { content:""; position:absolute; left:33px; top:0; width:78px; height:4px; border-radius:0 0 8px 8px; background:var(--gold); }
+.focus-label { display:inline-block; color:#f3dcae; font-size:.68rem; font-weight:800; letter-spacing:.15em; margin:5px 0 9px; }
+.hero-focus-card h2 { position:relative; color:#fff; font-family:"Source Serif 4",Georgia,serif; font-size:2rem; line-height:1.08; margin:0 0 10px; }
+.focus-intro { margin:0 0 18px; color:#cad8e7; font-size:.88rem; line-height:1.5; }
+.focus-list { display:grid; gap:1px; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.07); border-radius:13px; overflow:hidden; }
+.focus-list a { display:grid; grid-template-columns:29px 1fr; gap:10px; align-items:center; padding:13px 14px; background:rgba(16,43,78,.92); color:#fff; transition:background .18s ease,padding-left .18s ease; }
+.focus-list a:hover { background:#173b63; padding-left:17px; }
+.focus-list span { color:#efcf93; font-size:.7rem; font-weight:800; }
+.focus-list strong { font-size:.9rem; line-height:1.35; font-weight:650; }
+.focus-cta { display:inline-flex; align-items:center; gap:8px; margin-top:19px; color:#fff; font-weight:750; font-size:.89rem; }
+.focus-cta span { color:#efcf93; }
+.section-compact { padding:72px 0; }
+.section-muted { background:#f4f7fb; }
+.compact-heading { margin-bottom:30px; }
+
+/* Atuação: seção de autoridade com contraste */
+.practice-section-refined {
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(31,95,175,.28), transparent 35%),
+    linear-gradient(145deg,#081a31 0%,#0b1f3a 58%,#102b4e 100%);
+  color:#fff;
+}
+.practice-section-refined::before { content:""; position:absolute; inset:0; opacity:.16; background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px); background-size:38px 38px; pointer-events:none; }
+.practice-section-refined .container { position:relative; }
+.practice-heading-refined .section-kicker { color:#efcf93; }
+.practice-heading-refined .section-title { color:#fff; }
+.practice-heading-refined .section-description { color:#d8e4ef; max-width:760px; }
+.practice-grid-clean { display:grid; grid-template-columns:repeat(3,1fr); gap:13px; }
+.practice-card-clean { position:relative; overflow:hidden; min-height:190px; padding:25px; background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.035)); border:1px solid rgba(255,255,255,.13); border-radius:16px; box-shadow:0 12px 30px rgba(0,0,0,.08); transition:transform .2s ease,border-color .2s ease,background .2s ease; }
+.practice-card-clean::after { content:""; position:absolute; left:0; top:0; width:4px; height:56px; background:linear-gradient(var(--gold),rgba(199,161,90,.18)); }
+.practice-card-clean:hover { transform:translateY(-3px); border-color:rgba(199,161,90,.40); background:linear-gradient(145deg,rgba(255,255,255,.10),rgba(255,255,255,.05)); }
+.practice-card-clean > span { display:block; color:#efcf93; font-family:"Source Serif 4",Georgia,serif; font-size:1.35rem; font-weight:650; margin-bottom:12px; }
+.practice-card-clean h3 { color:#fff; font-family:"Source Serif 4",Georgia,serif; font-size:1.25rem; margin-bottom:8px; }
+.practice-card-clean p { margin:0; color:#d6e2ee; font-size:.9rem; line-height:1.55; font-weight:500; }
+
+/* Atendimento */
+.steps-clean { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+.step-clean { display:flex; gap:16px; padding:23px; background:#fff; border:1px solid #dce5ef; border-radius:15px; box-shadow:0 8px 24px rgba(11,31,58,.045); }
+.step-clean > span { flex:0 0 39px; height:39px; display:grid; place-items:center; border-radius:50%; background:linear-gradient(145deg,#edf4fb,#dfeaf7); color:var(--blue-dark); font-weight:800; }
+.step-clean h3 { margin-bottom:6px; }
+.step-clean p { margin:0; color:#566174; font-size:.9rem; line-height:1.5; }
+
+/* Sobre mim */
+.about-section-refined { background:linear-gradient(180deg,#fff 0%,#f8fafc 100%); }
+.about-grid-clean { grid-template-columns:minmax(300px,.82fr) minmax(0,1.18fr); gap:58px; }
+.about-photo-panel-clean { max-width:395px; padding:10px; border-radius:22px; background:#fff; border:1px solid #dde6ef; box-shadow:0 22px 48px rgba(11,31,58,.11); }
+.about-photo-panel-clean::before { width:82px; height:4px; left:24px; background:var(--gold); }
+.about-photo-panel-clean .about-photo { border-radius:15px; }
+.about-photo-caption { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:12px 8px 2px; }
+.about-photo-caption strong { color:var(--navy); font-family:"Source Serif 4",Georgia,serif; font-size:1rem; }
+.about-photo-caption span { color:#69778a; font-size:.76rem; font-weight:650; }
+.about-copy-clean .section-title { max-width:720px; }
+.about-lead { max-width:760px; margin:0 0 15px; color:var(--navy); font-size:1.08rem; line-height:1.6; font-weight:700; }
+.about-text-refined { max-width:780px; margin:0 0 13px; color:#4f5d72; font-size:.96rem; line-height:1.7; }
+.about-principles { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:23px; }
+.about-principles > div { padding:15px 14px; border:1px solid #dce5ef; border-radius:13px; background:#fff; }
+.about-principles span { display:block; color:var(--gold); font-family:"Source Serif 4",Georgia,serif; font-size:1rem; font-weight:700; margin-bottom:5px; }
+.about-principles strong { display:block; color:var(--navy); font-size:.84rem; margin-bottom:4px; }
+.about-principles p { margin:0; color:#657287; font-size:.78rem; line-height:1.45; }
+.about-actions { margin-top:22px; }
+.secondary-clean { gap:14px; }
+.contact-section-clean { padding:70px 0; background:linear-gradient(180deg,#edf3f9,#e6eef7); }
+.contact-grid-clean { align-items:center; }
+.contact-card-clean { display:flex; flex-direction:column; align-items:flex-start; gap:6px; }
+.contact-card-clean strong { color:var(--navy); font-size:1.1rem; }
+.contact-card-clean span { color:#66758a; margin-bottom:14px; }
+.mobile-whatsapp-bar { display:none; }
+
+@media (max-width:980px) {
+  .hero-grid-conversion { grid-template-columns:1fr; gap:30px; }
+  .practice-grid-clean { grid-template-columns:repeat(2,1fr); }
+  .steps-clean { grid-template-columns:1fr; }
+  .about-grid-clean { grid-template-columns:1fr; gap:32px; }
+  .about-photo-panel-clean { margin:0 auto; }
+}
+
+@media (max-width:760px) {
+  body { padding-bottom:72px; }
+  .hero-conversion { padding:36px 0 40px; }
+  .hero-grid-conversion { gap:22px; }
+  .hero-copy-conversion .eyebrow { font-size:.59rem; line-height:1.35; margin-bottom:10px; letter-spacing:.10em; }
+  .hero-copy-conversion h1 { font-size:2.42rem; line-height:1.01; margin-bottom:13px; }
+  .hero-title-accent::after { height:.07em; }
+  .hero-question { font-size:1.02rem; line-height:1.42; margin-bottom:8px; }
+  .hero-lead-conversion { font-size:.9rem; line-height:1.56; }
+  .hero-actions-conversion { margin-top:18px; }
+  .hero-actions-conversion .btn { width:100%; min-height:51px; padding:0 14px; font-size:.88rem; }
+  .hero-id-line { display:grid; gap:2px; margin-top:15px; padding-top:14px; font-size:.77rem; }
+  .hero-id-line strong { font-size:.82rem; }
+  .hero-trust-row { gap:6px; margin-top:10px; }
+  .hero-trust-row span { padding:5px 7px; font-size:.64rem; }
+  .hero-legal-note { font-size:.66rem; line-height:1.42; }
+  .hero-focus-card { padding:22px 17px 19px; border-radius:16px; }
+  .hero-focus-card::after { left:17px; width:62px; }
+  .hero-focus-card h2 { font-size:1.52rem; margin-bottom:8px; }
+  .focus-intro { font-size:.78rem; margin-bottom:13px; }
+  .focus-list a { padding:11px 10px; grid-template-columns:24px 1fr; gap:7px; }
+  .focus-list strong { font-size:.8rem; }
+  .focus-cta { margin-top:14px; font-size:.8rem; }
+  .section-compact { padding:50px 0; }
+  .compact-heading { margin-bottom:21px; }
+  .compact-heading .section-title { font-size:1.94rem; }
+  .practice-heading-refined .section-description { font-size:.86rem; line-height:1.52; }
+  .practice-grid-clean { grid-template-columns:1fr; gap:9px; }
+  .practice-card-clean { min-height:0; padding:18px 16px 18px 19px; border-radius:12px; }
+  .practice-card-clean::after { width:3px; height:46px; }
+  .practice-card-clean > span { font-size:1.08rem; margin-bottom:7px; }
+  .practice-card-clean h3 { font-size:1.06rem; margin-bottom:4px; }
+  .practice-card-clean p { font-size:.82rem; line-height:1.48; }
+  .step-clean { padding:16px; gap:12px; }
+  .step-clean > span { flex-basis:34px; height:34px; }
+  .step-clean h3 { font-size:1rem; }
+  .step-clean p { font-size:.83rem; }
+  .about-grid-clean { gap:25px; }
+  .about-photo-panel-clean { width:min(84vw,315px); margin:0 auto; }
+  .about-photo-caption { padding:10px 5px 0; }
+  .about-photo-caption strong { font-size:.9rem; }
+  .about-photo-caption span { font-size:.68rem; }
+  .about-copy-clean .section-title { font-size:2rem; }
+  .about-lead { font-size:.94rem; line-height:1.52; }
+  .about-text-refined { font-size:.86rem; line-height:1.58; }
+  .about-principles { grid-template-columns:1fr; gap:7px; margin-top:18px; }
+  .about-principles > div { padding:12px 13px; }
+  .about-principles p { font-size:.76rem; }
+  .about-actions .btn { width:100%; }
+  .secondary-clean { grid-template-columns:1fr; }
+  .contact-section-clean { padding:50px 0; }
+  .contact-card-clean .btn { width:100%; }
+  .mobile-whatsapp-bar { position:fixed; left:10px; right:10px; bottom:10px; z-index:1000; display:flex; align-items:center; justify-content:space-between; gap:12px; min-height:52px; padding:10px 16px; border-radius:13px; background:linear-gradient(135deg,#1f5faf,#174a88); color:#fff; border:1px solid rgba(255,255,255,.14); box-shadow:0 12px 30px rgba(11,31,58,.27); }
+  .mobile-whatsapp-bar span { font-size:.8rem; font-weight:600; }
+  .mobile-whatsapp-bar strong { font-size:.88rem; }
+}
+
+
+
+/* V4 — Especialista + atendimento nacional */
+.hero-conversion h1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .12em .2em;
+}
+.hero-specialist {
+  display: inline-block;
+  color: var(--gold);
+  font-weight: 700;
+  position: relative;
+  padding-right: .04em;
+}
+.hero-specialist::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -.08em;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--gold), rgba(199,161,90,.18));
+}
+.hero-id-line span:last-child {
+  color: #314c70;
+  font-weight: 700;
+}
+@media (max-width: 760px) {
+  .hero-conversion h1 {
+    display: block;
+  }
+  .hero-specialist {
+    display: block;
+    width: max-content;
+    margin-top: .12em;
+    font-size: .78em;
+    letter-spacing: -.02em;
+  }
+  .hero-specialist::after { height: 2px; }
+}
+
+
+/* =========================================================
+   V5 — REVISÃO GERAL DE LEGIBILIDADE, CONTRASTE E REFINAMENTO
+   ========================================================= */
+:root {
+  --text: #101b2d;
+  --muted: #3f4d61;
+}
+
+body {
+  color: #162236;
+  font-size: 17px;
+}
+
+/* Tipografia geral: menos texto apagado */
+.section-description,
+.secondary-card p,
+details p,
+.contact-card p,
+.about-text,
+.contact-meta {
+  color: #3d4b5f;
+  font-size: 1rem;
+  line-height: 1.68;
+}
+.section-subtitle { color: #2e3d52; }
+.section-kicker, .eyebrow, .cta-kicker { font-size: .78rem; }
+.section-title { color: #0b1f3a; }
+
+/* Hero */
+.hero-specialist {
+  color: #b68735;
+  font-weight: 700;
+  padding: 0;
+}
+.hero-specialist::after { display: none !important; }
+.hero-question { color: #162a45; font-size: 1.3rem; line-height: 1.48; }
+.hero-lead-conversion { color: #33445a; font-size: 1.08rem; line-height: 1.72; }
+.hero-id-line { color: #34475f; font-size: .94rem; }
+.hero-id-line strong { font-size: 1rem; }
+.hero-id-line span:last-child { color: #25466f; }
+.hero-trust-row span {
+  color: #263b57;
+  font-size: .78rem;
+  background: #fff;
+  border-color: #c8d5e3;
+  padding: 7px 11px;
+}
+.hero-legal-note { color: #566579; font-size: .78rem; }
+.focus-label { font-size: .74rem; color: #f2d7a2; }
+.focus-intro { color: #e0e9f3; font-size: .96rem; }
+.focus-list strong { font-size: .98rem; }
+.focus-list span { font-size: .76rem; }
+.focus-cta { font-size: .96rem; }
+
+/* Questões trabalhistas */
+.practice-heading-refined .section-description {
+  color: #f0f5fa;
+  font-size: 1.04rem;
+  line-height: 1.68;
+}
+.practice-card-clean {
+  background: linear-gradient(145deg, rgba(255,255,255,.105), rgba(255,255,255,.055));
+  border-color: rgba(255,255,255,.19);
+}
+.practice-card-clean h3 { font-size: 1.34rem; }
+.practice-card-clean p { color: #edf3f9; font-size: .99rem; line-height: 1.62; }
+.practice-card-clean > span { font-size: 1.45rem; }
+
+/* Atendimento com presença visual */
+.service-flow-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 92% 10%, rgba(199,161,90,.12), transparent 27%),
+    linear-gradient(145deg, #eaf1f8 0%, #dfe9f4 100%);
+}
+.service-flow-section::before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; top: 0;
+  height: 1px;
+  background: #cbd8e6;
+}
+.service-flow-heading { max-width: 860px; }
+.service-flow-heading .section-kicker { color: #174a88; }
+.service-flow-heading .section-title { max-width: 820px; }
+.service-flow-heading .section-description {
+  color: #2f435c;
+  max-width: 800px;
+  font-size: 1.04rem;
+}
+.service-flow-grid { gap: 16px; }
+.service-flow-grid .step-clean {
+  min-height: 190px;
+  align-items: flex-start;
+  padding: 27px;
+  background: linear-gradient(145deg, #0b1f3a, #123359);
+  border: 1px solid rgba(11,31,58,.16);
+  box-shadow: 0 16px 34px rgba(11,31,58,.12);
+}
+.service-flow-grid .step-clean > span {
+  flex-basis: 44px;
+  height: 44px;
+  background: rgba(199,161,90,.15);
+  border: 1px solid rgba(229,194,127,.38);
+  color: #f2d7a2;
+  font-size: .87rem;
+}
+.service-flow-grid .step-clean h3 {
+  color: #fff;
+  font-size: 1.24rem;
+  margin: 2px 0 8px;
+}
+.service-flow-grid .step-clean p {
+  color: #eef4fa;
+  font-size: .98rem;
+  line-height: 1.62;
+}
+
+/* Sobre o advogado */
+.about-section-refined {
+  background: linear-gradient(180deg, #ffffff 0%, #f3f7fb 100%);
+}
+.about-photo-panel-clean {
+  padding: 9px;
+  background: #fff;
+  border-color: #cfdae6;
+  box-shadow: 0 24px 52px rgba(11,31,58,.13);
+}
+.about-photo-panel-clean::before { top: -2px; }
+.about-copy-clean .section-title { max-width: 760px; }
+.about-lead {
+  color: #183351;
+  font-size: 1.14rem;
+  line-height: 1.62;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.about-text-refined {
+  color: #34465c;
+  font-size: 1.02rem;
+  line-height: 1.78;
+  margin-bottom: 15px;
+}
+.about-principles { gap: 12px; margin-top: 26px; }
+.about-principles > div {
+  padding: 18px 17px;
+  background: #fff;
+  border-color: #ccd9e6;
+  box-shadow: 0 7px 20px rgba(11,31,58,.045);
+}
+.about-principles span { font-size: 1.08rem; }
+.about-principles strong { font-size: .96rem; line-height: 1.35; }
+.about-principles p { color: #44546a; font-size: .9rem; line-height: 1.55; }
+
+/* Demais seções */
+.secondary-card { border-color: #cdd9e6; box-shadow: 0 8px 22px rgba(11,31,58,.045); }
+.secondary-card h3 { font-size: 1.65rem; }
+.secondary-card p { color: #34465b; font-size: 1rem; }
+details { border-color: #ccd8e5; }
+summary { font-size: 1rem; }
+details p { color: #3a4a5f; font-size: .98rem; }
+.contact-section-clean { background: linear-gradient(180deg,#e4edf6,#d9e5f1); }
+.contact-section-clean .section-description { color: #34475e; }
+.contact-card-clean strong { font-size: 1.2rem; }
+.contact-card-clean span { color: #3c5069; font-size: .98rem; }
+.footer-lockup p, .footer-info p { color: #d7e1ec; font-size: .84rem; line-height: 1.55; }
+
+@media (max-width: 760px) {
+  body { font-size: 16px; }
+
+  .hero-conversion { padding: 39px 0 44px; }
+  .hero-copy-conversion .eyebrow { font-size: .66rem; line-height: 1.45; }
+  .hero-copy-conversion h1 { font-size: clamp(2.48rem, 11.2vw, 3.1rem); line-height: 1.02; margin-bottom: 16px; }
+  .hero-specialist { display: block; width: fit-content; margin-top: .13em; font-size: .84em; }
+  .hero-question { font-size: 1.08rem; line-height: 1.48; margin-bottom: 10px; }
+  .hero-lead-conversion { font-size: .98rem; line-height: 1.65; }
+  .hero-actions-conversion .btn { min-height: 54px; font-size: .94rem; }
+  .hero-id-line { font-size: .86rem; gap: 4px; }
+  .hero-id-line strong { font-size: .92rem; }
+  .hero-trust-row { gap: 7px; }
+  .hero-trust-row span { font-size: .72rem; padding: 6px 8px; }
+  .hero-legal-note { font-size: .72rem; line-height: 1.5; }
+
+  .hero-focus-card { padding: 24px 19px 21px; }
+  .hero-focus-card h2 { font-size: 1.68rem; line-height: 1.12; }
+  .focus-label { font-size: .68rem; }
+  .focus-intro { font-size: .88rem; line-height: 1.55; }
+  .focus-list a { padding: 13px 11px; }
+  .focus-list strong { font-size: .9rem; line-height: 1.45; }
+  .focus-list span { font-size: .7rem; }
+  .focus-cta { font-size: .88rem; }
+
+  .section-compact { padding: 56px 0; }
+  .section-kicker, .cta-kicker { font-size: .7rem; }
+  .compact-heading .section-title, .about-copy-clean .section-title { font-size: 2.1rem; line-height: 1.1; }
+  .section-description { font-size: .98rem; line-height: 1.62; }
+
+  .practice-heading-refined .section-description { font-size: .96rem; line-height: 1.62; }
+  .practice-grid-clean { gap: 11px; }
+  .practice-card-clean { padding: 21px 18px 21px 21px; }
+  .practice-card-clean > span { font-size: 1.2rem; }
+  .practice-card-clean h3 { font-size: 1.18rem; }
+  .practice-card-clean p { font-size: .94rem; line-height: 1.58; }
+
+  .service-flow-heading .section-description { font-size: .98rem; }
+  .service-flow-grid { gap: 11px; }
+  .service-flow-grid .step-clean { min-height: 0; padding: 20px 18px; gap: 14px; }
+  .service-flow-grid .step-clean > span { flex-basis: 40px; height: 40px; font-size: .78rem; }
+  .service-flow-grid .step-clean h3 { font-size: 1.1rem; }
+  .service-flow-grid .step-clean p { font-size: .94rem; line-height: 1.58; }
+
+  .about-grid-clean { gap: 29px; }
+  .about-photo-panel-clean { width: min(88vw, 340px); }
+  .about-lead { font-size: 1.02rem; line-height: 1.58; }
+  .about-text-refined { font-size: .96rem; line-height: 1.67; }
+  .about-principles { gap: 9px; }
+  .about-principles > div { padding: 15px; }
+  .about-principles strong { font-size: .94rem; }
+  .about-principles p { font-size: .88rem; line-height: 1.52; }
+
+  .secondary-card p, details p, .contact-card-clean span { font-size: .94rem; }
+  summary { font-size: .96rem; }
+  .contact-card-clean strong { font-size: 1.12rem; }
+  .mobile-whatsapp-bar span { font-size: .86rem; }
+  .mobile-whatsapp-bar strong { font-size: .94rem; }
+  .footer-lockup p, .footer-info p { font-size: .78rem; }
+}
+
+
+
+/* V6 — hero limpo + atendimento pessoal */
+.hero-actions-conversion { margin-bottom: 0 !important; }
+.hero-copy-conversion { align-self: center; }
+.about-lead strong { color: var(--navy); font-weight: 800; }
+.about-text-refined { max-width: 760px; }
+@media (max-width: 760px) {
+  .hero-actions-conversion { margin-bottom: 0 !important; }
+  .about-copy-clean .section-title { max-width: 19ch; }
+  .about-lead { font-size: 1rem !important; line-height: 1.62 !important; }
+}
+
+
+
+/* =========================================================
+   V7 — SOBRE REFINADO + TRANSIÇÃO ENTRE SEÇÕES
+   ========================================================= */
+.about-section-refined {
+  position: relative;
+  padding-bottom: 58px !important;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f8fc 100%);
+}
+
+.about-service-panel {
+  margin-top: 30px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #0b1f3a 0%, #12365f 100%);
+  border: 1px solid rgba(11,31,58,.18);
+  box-shadow: 0 20px 44px rgba(11,31,58,.13);
+}
+
+.about-service-panel .about-principles {
+  margin: 0;
+  gap: 0;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.about-service-panel .about-principles > div {
+  position: relative;
+  min-height: 188px;
+  padding: 24px 23px 22px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.about-service-panel .about-principles > div + div {
+  border-left: 1px solid rgba(255,255,255,.14);
+}
+
+.about-service-panel .about-principles span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 38px;
+  height: 30px;
+  margin-bottom: 13px;
+  padding: 0 9px;
+  border-radius: 999px;
+  color: #f4d79f;
+  background: rgba(199,161,90,.14);
+  border: 1px solid rgba(229,194,127,.28);
+  font-family: Inter, sans-serif;
+  font-size: .79rem;
+  font-weight: 800;
+  letter-spacing: .05em;
+}
+
+.about-service-panel .about-principles strong {
+  display: block;
+  color: #ffffff;
+  font-size: 1.08rem;
+  line-height: 1.34;
+  margin-bottom: 9px;
+}
+
+.about-service-panel .about-principles p {
+  color: #e6eef7;
+  font-size: .96rem;
+  line-height: 1.58;
+}
+
+.about-panel-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 26px;
+  padding: 20px 23px;
+  border-top: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.055);
+}
+
+.about-panel-cta > div {
+  display: grid;
+  gap: 3px;
+  max-width: 610px;
+}
+
+.about-panel-cta strong {
+  color: #ffffff;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 1.16rem;
+  line-height: 1.3;
+}
+
+.about-panel-cta span {
+  color: #dce8f4;
+  font-size: .93rem;
+  line-height: 1.5;
+}
+
+.about-panel-cta .btn {
+  flex: 0 0 auto;
+  min-height: 48px;
+  padding-inline: 20px;
+  border-color: #ffffff;
+  background: #ffffff;
+  color: #0b1f3a;
+  box-shadow: none;
+}
+
+.about-panel-cta .btn:hover {
+  background: #eef5fc;
+  border-color: #eef5fc;
+  color: #0b1f3a;
+}
+
+/* Delimitação clara entre Sobre e Outras áreas */
+#outras-areas {
+  position: relative;
+  margin-top: 0;
+  padding-top: 64px !important;
+  background:
+    radial-gradient(circle at 85% 12%, rgba(31,95,175,.07), transparent 25%),
+    linear-gradient(180deg, #eaf1f8 0%, #f6f9fc 100%) !important;
+  border-top: 1px solid #cbd8e6;
+}
+
+#outras-areas::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  width: 92px;
+  height: 4px;
+  transform: translateX(-50%);
+  border-radius: 999px;
+  background: linear-gradient(90deg, #b68735, #e2c27f);
+}
+
+#outras-areas .compact-heading {
+  margin-bottom: 26px;
+}
+
+#outras-areas .secondary-card {
+  background: rgba(255,255,255,.92);
+  border-color: #c6d4e3;
+  box-shadow: 0 10px 26px rgba(11,31,58,.055);
+}
+
+@media (max-width: 980px) {
+  .about-service-panel .about-principles {
+    grid-template-columns: 1fr;
+  }
+  .about-service-panel .about-principles > div {
+    min-height: 0;
+  }
+  .about-service-panel .about-principles > div + div {
+    border-left: 0;
+    border-top: 1px solid rgba(255,255,255,.14);
+  }
+  .about-panel-cta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 760px) {
+  .about-section-refined {
+    padding-bottom: 44px !important;
+  }
+  .about-service-panel {
+    margin-top: 24px;
+    border-radius: 16px;
+  }
+  .about-service-panel .about-principles > div {
+    padding: 19px 18px;
+  }
+  .about-service-panel .about-principles span {
+    min-width: 35px;
+    height: 28px;
+    margin-bottom: 10px;
+    font-size: .73rem;
+  }
+  .about-service-panel .about-principles strong {
+    font-size: 1.02rem;
+    margin-bottom: 6px;
+  }
+  .about-service-panel .about-principles p {
+    font-size: .93rem;
+    line-height: 1.55;
+  }
+  .about-panel-cta {
+    gap: 15px;
+    padding: 18px;
+  }
+  .about-panel-cta strong {
+    font-size: 1.08rem;
+  }
+  .about-panel-cta span {
+    font-size: .9rem;
+  }
+  .about-panel-cta .btn {
+    width: 100%;
+    min-height: 50px;
+  }
+  #outras-areas {
+    padding-top: 52px !important;
+  }
+  #outras-areas::before {
+    width: 72px;
+  }
+}
+
+
+
+/* FAQ + CONTATO REFINADOS */
+.faq-section-refined {
+  padding-top: 82px;
+  padding-bottom: 86px;
+  background:
+    linear-gradient(180deg, #F7FAFD 0%, #EEF4FA 100%);
+  border-top: 1px solid rgba(11,31,58,.06);
+}
+.faq-shell {
+  position: relative;
+  background: linear-gradient(180deg, #EDF4FA 0%, #F7FAFD 100%);
+  border: 1px solid #D4E0EC;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 18px 42px rgba(11,31,58,.07);
+}
+.faq-shell::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 40px;
+  width: 92px;
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #C7A15A 0%, #E0C084 100%);
+}
+.faq-heading-refined {
+  max-width: 760px;
+  margin-bottom: 28px;
+}
+.faq-heading-refined .section-description {
+  color: #516077;
+  font-size: 1.02rem;
+  line-height: 1.68;
+}
+.faq {
+  display: grid;
+  gap: 14px;
+}
+.faq-item {
+  background: #FFFFFF;
+  border: 1px solid #D1DDE9;
+  border-radius: 16px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(11,31,58,.05);
+}
+.faq-item[open] {
+  border-color: #C4D3E4;
+  box-shadow: 0 14px 28px rgba(11,31,58,.08);
+}
+.faq-item summary {
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+  color: var(--navy);
+  font-weight: 700;
+  font-size: 1.06rem;
+  line-height: 1.5;
+  padding: 19px 58px 19px 22px;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: #EEF4FA;
+  border: 1px solid #D2DFEC;
+  color: var(--blue);
+  font-size: 1.08rem;
+  font-weight: 800;
+}
+.faq-item[open] summary::after {
+  content: "–";
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #174A88 0%, #1F5FAF 100%);
+  border-color: transparent;
+}
+.faq-item p {
+  margin: 0;
+  padding: 0 22px 20px;
+  color: #4E5C72;
+  font-size: .98rem;
+  line-height: 1.72;
+}
+
+.contact-section-refined {
+  padding: 86px 0;
+  background: linear-gradient(180deg, #EAF1F8 0%, #EDF4FA 100%);
+  border-top: 1px solid rgba(11,31,58,.06);
+}
+.contact-shell {
+  display: grid;
+  grid-template-columns: .95fr 1.05fr;
+  gap: 44px;
+  align-items: stretch;
+  background: #F7FAFD;
+  border: 1px solid #D6E1EC;
+  border-radius: 24px;
+  padding: 36px;
+  box-shadow: 0 18px 42px rgba(11,31,58,.07);
+}
+.contact-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-intro .section-description {
+  color: #516077;
+  font-size: 1.04rem;
+  line-height: 1.72;
+  max-width: 620px;
+}
+.contact-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+.contact-points span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 15px;
+  border-radius: 999px;
+  background: rgba(31,95,175,.08);
+  border: 1px solid rgba(31,95,175,.14);
+  color: #163B6B;
+  font-size: .92rem;
+  font-weight: 600;
+}
+.contact-card-refined {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  min-height: 100%;
+  padding: 34px;
+  border: 0;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #0D2850 0%, #133B73 100%);
+  box-shadow: 0 22px 46px rgba(11,31,58,.18);
+}
+.contact-card-refined::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  right: -74px;
+  top: -80px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,.12);
+}
+.contact-card-kicker {
+  display: inline-block;
+  color: #F0D6A7;
+  font-size: .74rem;
+  font-weight: 800;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.contact-card-refined strong {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(1.8rem, 2.6vw, 2.3rem);
+  line-height: 1.04;
+  color: #FFFFFF;
+}
+.contact-line {
+  display: block;
+  color: #D9E7F6;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.contact-card-refined p {
+  margin: 0;
+  color: #EEF5FC;
+  font-size: 1rem;
+  line-height: 1.72;
+  max-width: 520px;
+}
+.contact-card-refined .btn {
+  width: fit-content;
+  margin-top: 6px;
+  background: #FFFFFF;
+  color: var(--navy);
+  border-color: #FFFFFF;
+  box-shadow: 0 10px 24px rgba(0,0,0,.14);
+}
+.contact-card-refined .btn:hover {
+  background: #EEF5FC;
+  border-color: #EEF5FC;
+  color: var(--navy);
+}
+
+@media (max-width: 980px) {
+  .contact-shell {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+@media (max-width: 700px) {
+  .faq-section-refined,
+  .contact-section-refined {
+    padding-top: 58px;
+    padding-bottom: 60px;
+  }
+  .faq-shell,
+  .contact-shell {
+    border-radius: 18px;
+    padding: 22px 18px;
+  }
+  .faq-shell::before {
+    left: 22px;
+    width: 70px;
+  }
+  .faq-heading-refined {
+    margin-bottom: 22px;
+  }
+  .faq-heading-refined .section-description,
+  .contact-intro .section-description {
+    font-size: .98rem;
+    line-height: 1.64;
+  }
+  .faq-item summary {
+    font-size: .96rem;
+    padding: 16px 50px 16px 17px;
+  }
+  .faq-item summary::after {
+    right: 16px;
+    width: 26px;
+    height: 26px;
+  }
+  .faq-item p {
+    padding: 0 17px 17px;
+    font-size: .92rem;
+    line-height: 1.62;
+  }
+  .contact-shell {
+    gap: 24px;
+  }
+  .contact-points {
+    gap: 8px;
+    margin-top: 18px;
+  }
+  .contact-points span {
+    min-height: 36px;
+    padding: 0 13px;
+    font-size: .84rem;
+  }
+  .contact-card-refined {
+    padding: 24px 18px;
+    border-radius: 18px;
+    gap: 12px;
+  }
+  .contact-card-refined strong {
+    font-size: 1.75rem;
+  }
+  .contact-line,
+  .contact-card-refined p {
+    font-size: .93rem;
+    line-height: 1.6;
+  }
+  .contact-card-refined .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+
+/* V9 — FAQ pesquisado + contato sem repetição */
+.faq-item p strong { color: #183C6B; font-weight: 750; }
+.contact-card-refined { gap: 16px; }
+.contact-card-refined .btn { margin-top: 10px; }
+@media (max-width: 700px) {
+  .faq-heading-refined .section-title { font-size: clamp(1.9rem, 8vw, 2.3rem); }
+  .contact-points { display: grid; grid-template-columns: 1fr; }
+  .contact-points span { width: fit-content; }
+}
+
+
+
+/* V11 — DELIMITAÇÕES SIMPLES E ELEGANTES */
+/* Mantém a linguagem visual limpa da V9, sem grandes molduras ou barras douradas. */
+
+/* Atuação → Atendimento */
+.practice-section-refined {
+  border-bottom: 1px solid rgba(255,255,255,.10);
+}
+
+.service-flow-section {
+  background: linear-gradient(180deg, #EDF3F9 0%, #E7EFF7 100%);
+  border-top: 1px solid #D8E2EC;
+  border-bottom: 1px solid #D8E2EC;
+}
+.service-flow-section::before {
+  display: none !important;
+}
+
+/* Atendimento → Sobre: separação leve, sem caixa ao redor da seção */
+.about-section-refined {
+  background: #FFFFFF;
+  border-top: 1px solid #E1E8F0;
+  border-bottom: 1px solid #E1E8F0;
+}
+.about-section-refined .container,
+.about-grid-clean {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+/* Foto permanece elegante, mas sem moldura pesada */
+.about-photo-panel-clean {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.about-photo-panel-clean::before {
+  display: none !important;
+}
+.about-photo-panel-clean .about-photo {
+  border-radius: 18px;
+  box-shadow: 0 16px 36px rgba(11,31,58,.11);
+}
+
+/* Sobre → Outras áreas */
+#outras-areas.section-muted {
+  background: #F4F7FB;
+  border-top: 1px solid #DCE5EE;
+  border-bottom: 1px solid #DCE5EE;
+}
+#outras-areas .secondary-card {
+  border-color: #D3DEE9;
+  box-shadow: 0 8px 20px rgba(11,31,58,.045);
+}
+
+/* Outras áreas → FAQ */
+.faq-section-refined {
+  border-top: 1px solid #DCE5EE;
+}
+
+/* FAQ → Contato */
+.contact-section-refined {
+  border-top: 1px solid #D5E0EB;
+}
+
+/* Ritmo vertical mais consistente */
+.service-flow-section,
+.about-section-refined,
+#outras-areas.section-muted,
+.faq-section-refined,
+.contact-section-refined {
+  scroll-margin-top: 88px;
+}
+
+@media (max-width: 760px) {
+  .service-flow-section,
+  .about-section-refined,
+  #outras-areas.section-muted,
+  .faq-section-refined,
+  .contact-section-refined {
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+  }
+
+  .about-photo-panel-clean {
+    width: min(86vw, 340px);
+    margin: 0 auto;
+  }
+
+  .about-photo-panel-clean .about-photo {
+    border-radius: 15px;
+    box-shadow: 0 12px 28px rgba(11,31,58,.10);
+  }
+
+  .about-grid-clean {
+    gap: 28px;
+  }
+
+  #outras-areas .secondary-card {
+    box-shadow: 0 5px 14px rgba(11,31,58,.04);
+  }
+}
+
 </style>
 
   <script type="application/ld+json">
@@ -1459,9 +2703,58 @@ img {
     "@type": "LegalService",
     "name": "Jonathan Richena Advocacia",
     "description": "Atuação em Direito Trabalhista, com atendimento também em Direito do Consumidor e Previdenciário.",
-    "areaServed": "São Paulo",
+    "areaServed": "Brasil",
     "url": "https://jonathanrichenaadv.com.br/"
   }
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quanto tempo a empresa tem para pagar minha rescisão?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A CLT prevê que o pagamento das verbas rescisórias e a entrega dos documentos da rescisão sejam feitos em até 10 dias contados do término do contrato. A modalidade da demissão altera as parcelas devidas e os valores devem ser conferidos conforme o caso."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Meu FGTS não está sendo depositado. O que posso fazer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O trabalhador pode conferir o extrato no aplicativo FGTS. A falta de recolhimento é obrigação do empregador, pode ser denunciada ao Ministério do Trabalho e discutida judicialmente. Em situações relevantes ou reiteradas, a irregularidade pode ser analisada como fundamento para rescisão indireta."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Faço horas extras, mas não tenho cartão de ponto. Ainda posso cobrar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. A jornada pode ser demonstrada por mensagens, e-mails, escalas, registros de acesso, documentos, testemunhas e outros elementos. A ausência ou invalidade dos controles de jornada pode ter efeito importante na prova. A hora extra deve ser remunerada com adicional de pelo menos 50%, salvo percentual mais favorável."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quando a rescisão indireta pode ser cabível?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A rescisão indireta pode ser discutida diante de falta grave do empregador, como descumprimentos contratuais relevantes, irregularidades reiteradas de FGTS ou salários, assédio e outras condutas graves. A situação deve ser analisada antes de o trabalhador deixar o emprego."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto tempo tenho para entrar com uma ação trabalhista depois de sair da empresa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Em regra, o trabalhador tem até 2 anos após o fim do contrato para ajuizar a ação e pode cobrar créditos referentes aos 5 anos anteriores ao ajuizamento, observadas as particularidades do caso."
+      }
+    }
+  ]
+}
   </script>
   <!-- GitHub Pages build: 2026-09-07 / CSS e JS incorporados ao HTML para evitar cache antigo -->
 </head>
@@ -1480,384 +2773,189 @@ img {
       </a>
 
       <nav class="menu" aria-label="Navegação principal">
-        <a href="#problemas">Seu caso</a>
-        <a href="#trabalhista">Trabalhista</a>
+        <a href="#atuacao">Atuação</a>
         <a href="#atendimento">Atendimento</a>
-        <a href="#sobre-advogado">Sobre o advogado</a>
-        <a href="#outras-areas">Outras áreas</a>
+        <a href="#sobre-advogado">Sobre</a>
+        <a href="#duvidas">Dúvidas</a>
         <a href="#contato">Contato</a>
       </nav>
 
-      <a class="btn btn-sm whatsapp-link" href="#" rel="noopener">Falar no WhatsApp</a>
-      <a class="mobile-header-cta whatsapp-link" href="#" rel="noopener" aria-label="Falar no WhatsApp">WhatsApp</a>
+      <a class="btn btn-sm whatsapp-link" data-whatsapp-source="header" href="#" rel="noopener">Falar no WhatsApp</a>
+      <a class="mobile-header-cta whatsapp-link" data-whatsapp-source="mobile_header" href="#" rel="noopener" aria-label="Falar no WhatsApp">WhatsApp</a>
     </div>
   </header>
 
   <main>
-    <section id="inicio" class="hero">
-      <div class="container hero-grid">
-        <div>
-          <span class="eyebrow">ADVOCACIA TRABALHISTA · DEFESA DO TRABALHADOR</span>
-          <h1>Trabalhou, cumpriu sua parte. <span>Seus direitos também precisam ser respeitados.</span></h1>
-          <p class="lead">
-            Demissão, horas extras, FGTS, assédio, acidente, doença ocupacional ou irregularidades no contrato
-            podem gerar dúvidas e prejuízos. A análise jurídica permite identificar quais direitos e medidas
-            podem ser discutidos em cada situação.
+    <section id="inicio" class="hero hero-conversion">
+      <div class="container hero-grid hero-grid-conversion">
+        <div class="hero-copy hero-copy-conversion">
+          <span class="eyebrow">ADVOCACIA TRABALHISTA ESPECIALIZADA · DEFESA DO TRABALHADOR</span>
+          <h1>Advogado <span class="hero-title-accent">Trabalhista</span> <span class="hero-specialist">Especialista</span></h1>
+          <p class="hero-question">Orientação clara para quem precisa entender e proteger seus direitos no trabalho.</p>
+          <p class="lead hero-lead-conversion">
+            Rescisão, horas extras, FGTS, vínculo de emprego, rescisão indireta, assédio,
+            acidente e doença ocupacional — com análise técnica do seu caso antes de qualquer medida.
           </p>
-
-          <div class="hero-actions">
-            <a class="btn whatsapp-link" href="#" rel="noopener">Quero entender meu caso</a>
-            <a class="btn btn-secondary" href="#problemas">Ver situações atendidas</a>
+          <div class="hero-actions hero-actions-conversion">
+            <a class="btn btn-primary-strong whatsapp-link" data-whatsapp-source="hero" href="#" rel="noopener">Falar diretamente com o advogado</a>
           </div>
-
-          <div class="trust-strip" aria-label="Informações de atendimento">
-            <div class="trust-item">
-              <strong>Atuação voltada ao trabalhador</strong>
-              <span>Direito individual do trabalho</span>
-            </div>
-            <div class="trust-item">
-              <strong>São Paulo e atendimento online</strong>
-              <span>Análise documental à distância</span>
-            </div>
-            <div class="trust-item">
-              <strong>Orientação individualizada</strong>
-              <span>Sem promessas de resultado</span>
-            </div>
-          </div>
-
-          <p class="disclaimer">
-            A existência de eventual direito depende da análise dos fatos, documentos, provas e legislação aplicável ao caso concreto.
-          </p>
         </div>
 
-        <aside class="hero-card">
-          <span class="section-kicker">ATENÇÃO A ESTES SINAIS</span>
-          <h2>Alguma dessas situações aconteceu com você?</h2>
-          <p>São exemplos comuns de questões que podem exigir avaliação trabalhista.</p>
-
-          <div class="problem-list">
-            <div class="problem-item"><span>01</span><p>Foi demitido e tem dúvida se recebeu corretamente a rescisão.</p></div>
-            <div class="problem-item"><span>02</span><p>Trabalhava além do horário, sem receber todas as horas extras.</p></div>
-            <div class="problem-item"><span>03</span><p>FGTS não era depositado ou existem diferenças nos recolhimentos.</p></div>
-            <div class="problem-item"><span>04</span><p>Sofreu assédio, humilhações, cobranças abusivas ou ambiente degradante.</p></div>
-            <div class="problem-item"><span>05</span><p>Sofreu acidente ou desenvolveu doença relacionada às atividades exercidas.</p></div>
-            <div class="problem-item"><span>06</span><p>Trabalhava como empregado, mas sem registro ou sob contratação questionável.</p></div>
+        <aside class="hero-focus-card" aria-label="Principais situações atendidas">
+          <span class="focus-label">QUESTÕES TRABALHISTAS</span>
+          <h2>O problema no trabalho merece uma análise cuidadosa.</h2>
+          <p class="focus-intro">Algumas das situações mais frequentes no atendimento:</p>
+          <div class="focus-list">
+            <a href="#atuacao"><span>01</span><strong>Demissão e verbas rescisórias</strong></a>
+            <a href="#atuacao"><span>02</span><strong>Horas extras e jornada</strong></a>
+            <a href="#atuacao"><span>03</span><strong>FGTS, registro e vínculo</strong></a>
+            <a href="#atuacao"><span>04</span><strong>Rescisão indireta e justa causa</strong></a>
+            <a href="#atuacao"><span>05</span><strong>Assédio, acidente e doença ocupacional</strong></a>
           </div>
-
-          <p class="mini-cta">Não é necessário saber qual ação cabe antes de procurar orientação. O primeiro passo é entender os fatos e documentos.</p>
+          <a class="focus-cta whatsapp-link" data-whatsapp-source="hero_card" href="#" rel="noopener">Quero explicar meu caso <span aria-hidden="true">→</span></a>
         </aside>
       </div>
     </section>
 
-    <section id="problemas" class="section">
+    <section id="atuacao" class="section section-compact practice-section-refined">
       <div class="container">
-        <div class="section-heading">
-          <span class="section-kicker">QUANDO PROCURAR ORIENTAÇÃO</span>
-          <h2 class="section-title">Situações que afetam diretamente a vida do trabalhador</h2>
-          <p class="section-description">
-            Nem toda irregularidade é evidente no momento em que acontece. Alguns problemas só aparecem na demissão,
-            no extrato do FGTS, na conferência da jornada ou quando a saúde e a capacidade de trabalho já foram afetadas.
-          </p>
+        <div class="section-heading compact-heading practice-heading-refined">
+          <span class="section-kicker">ATUAÇÃO TRABALHISTA</span>
+          <h2 class="section-title">Questões trabalhistas que analisamos</h2>
+          <p class="section-description">Cada situação exige olhar para os fatos, documentos e provas. Estes são alguns dos temas mais recorrentes no atendimento.</p>
         </div>
-
-        <div class="worker-grid">
-          <article class="worker-card">
-            <span class="num">01</span>
-            <h3>Fui demitido</h3>
-            <p>Conferência de verbas rescisórias, aviso-prévio, férias, 13º, FGTS, multa de 40% e documentos da rescisão.</p>
-          </article>
-          <article class="worker-card">
-            <span class="num">02</span>
-            <h3>Fazia horas extras</h3>
-            <p>Análise de jornada, intervalos, banco de horas, trabalho em domingos, feriados e registros de ponto.</p>
-          </article>
-          <article class="worker-card">
-            <span class="num">03</span>
-            <h3>Quero sair por culpa da empresa</h3>
-            <p>A rescisão indireta exige falta grave do empregador e deve ser analisada com cautela antes de qualquer decisão.</p>
-          </article>
-          <article class="worker-card">
-            <span class="num">04</span>
-            <h3>Sofri assédio ou humilhações</h3>
-            <p>Mensagens, testemunhas, advertências e outros registros podem ser relevantes para compreender o ambiente de trabalho.</p>
-          </article>
-          <article class="worker-card">
-            <span class="num">05</span>
-            <h3>Me acidentei ou adoeci trabalhando</h3>
-            <p>Acidente, doença ocupacional, afastamento, estabilidade, incapacidade e eventuais repercussões indenizatórias.</p>
-          </article>
-          <article class="worker-card">
-            <span class="num">06</span>
-            <h3>Trabalhei sem registro</h3>
-            <p>É possível analisar vínculo de emprego, pejotização, prestação de serviços e a forma como o trabalho ocorria na prática.</p>
-          </article>
+        <div class="practice-grid-clean">
+          <article class="practice-card-clean"><span>01</span><h3>Rescisão e verbas</h3><p>Conferência de saldo, aviso-prévio, férias, 13º, FGTS e demais parcelas da saída.</p></article>
+          <article class="practice-card-clean"><span>02</span><h3>Horas extras e jornada</h3><p>Jornada efetivamente cumprida, intervalos, banco de horas, domingos e feriados.</p></article>
+          <article class="practice-card-clean"><span>03</span><h3>Vínculo de emprego</h3><p>Trabalho sem registro, pejotização e situações em que o vínculo precisa ser reconhecido.</p></article>
+          <article class="practice-card-clean"><span>04</span><h3>Rescisão indireta</h3><p>Análise de condutas graves do empregador antes de qualquer decisão de romper o vínculo.</p></article>
+          <article class="practice-card-clean"><span>05</span><h3>Assédio e dano moral</h3><p>Humilhações, constrangimentos, cobranças abusivas e outras violações no ambiente de trabalho.</p></article>
+          <article class="practice-card-clean"><span>06</span><h3>Acidente e doença ocupacional</h3><p>Estabilidade, incapacidade, nexo com o trabalho e demais repercussões trabalhistas.</p></article>
         </div>
       </div>
     </section>
 
-    <section id="trabalhista" class="section section-dark">
+    <section id="atendimento" class="section section-compact service-flow-section">
       <div class="container">
-        <div class="section-heading">
-          <span class="section-kicker">DIREITO TRABALHISTA</span>
-          <h2 class="section-title">Atuação concentrada na defesa dos direitos do trabalhador</h2>
-          <p class="section-description">
-            A estratégia depende do histórico do vínculo, documentos disponíveis e provas que possam demonstrar o que ocorreu na relação de trabalho.
-          </p>
-        </div>
-
-        <div class="labor-grid">
-          <article class="labor-item">
-            <span class="tag">Rescisão</span>
-            <h3>Verbas rescisórias e FGTS</h3>
-            <p>Conferência de pagamentos, depósitos, multas e parcelas devidas na ruptura do contrato.</p>
-          </article>
-          <article class="labor-item">
-            <span class="tag">Jornada</span>
-            <h3>Horas extras e intervalos</h3>
-            <p>Análise de ponto, banco de horas, jornada efetivamente cumprida e períodos de descanso.</p>
-          </article>
-          <article class="labor-item">
-            <span class="tag">Contrato</span>
-            <h3>Vínculo, registro e pejotização</h3>
-            <p>Avaliação da realidade da prestação de serviços e das condições em que o trabalho era executado.</p>
-          </article>
-          <article class="labor-item">
-            <span class="tag">Ruptura</span>
-            <h3>Rescisão indireta e justa causa</h3>
-            <p>Estudo das faltas atribuídas às partes e da validade das medidas adotadas durante o contrato.</p>
-          </article>
-          <article class="labor-item">
-            <span class="tag">Ambiente</span>
-            <h3>Assédio e dano moral</h3>
-            <p>Análise de condutas, contexto, provas e repercussões de situações ocorridas no ambiente de trabalho.</p>
-          </article>
-          <article class="labor-item">
-            <span class="tag">Saúde ocupacional</span>
-            <h3>Acidente e doença do trabalho</h3>
-            <p>Casos envolvendo acidente, adoecimento ocupacional, estabilidade, afastamento e capacidade laborativa.</p>
-          </article>
-          <article class="labor-item">
-            <span class="tag">Remuneração</span>
-            <h3>Adicionais e diferenças salariais</h3>
-            <p>Insalubridade, periculosidade, diferenças remuneratórias e outras parcelas relacionadas às condições de trabalho.</p>
-          </article>
-          <article class="labor-item">
-            <span class="tag">Estabilidade</span>
-            <h3>Garantias provisórias de emprego</h3>
-            <p>Análise de hipóteses de estabilidade e das consequências jurídicas de eventual dispensa.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="atendimento" class="section section-soft">
-      <div class="container">
-        <div class="section-heading">
+        <div class="section-heading compact-heading service-flow-heading">
           <span class="section-kicker">ATENDIMENTO</span>
-          <h2 class="section-title">Você explica o que aconteceu. O caso é analisado a partir das provas.</h2>
-          <p class="section-description">
-            A conversa inicial serve para organizar os fatos, identificar documentos importantes e compreender quais questões jurídicas precisam ser verificadas.
-          </p>
+          <h2 class="section-title">Você entende o caminho antes de tomar qualquer decisão.</h2>
+          <p class="section-description">O atendimento é direto e organizado para que os fatos, documentos e riscos sejam analisados com clareza desde o início.</p>
         </div>
-
-        <div class="steps">
-          <div class="step">
-            <span>01</span>
-            <h3>Relato do problema</h3>
-            <p>Explique como era o trabalho, o que aconteceu e em que momento surgiu o conflito.</p>
-          </div>
-          <div class="step">
-            <span>02</span>
-            <h3>Documentos e provas</h3>
-            <p>CTPS, holerites, TRCT, FGTS, mensagens, ponto, documentos médicos e outros registros são avaliados conforme o caso.</p>
-          </div>
-          <div class="step">
-            <span>03</span>
-            <h3>Análise jurídica</h3>
-            <p>São identificados os pontos relevantes, medidas possíveis e eventuais riscos antes do ajuizamento.</p>
-          </div>
-          <div class="step">
-            <span>04</span>
-            <h3>Acompanhamento</h3>
-            <p>Havendo contratação, o cliente recebe acompanhamento durante as etapas necessárias do caso.</p>
-          </div>
+        <div class="steps-clean service-flow-grid">
+          <div class="step-clean"><span>01</span><div><h3>Conte o que aconteceu</h3><p>Explique a relação de trabalho, o problema enfrentado e se o vínculo ainda está ativo.</p></div></div>
+          <div class="step-clean"><span>02</span><div><h3>Envie o que comprova o caso</h3><p>CTPS, holerites, TRCT, extrato do FGTS, mensagens, cartões de ponto e outros registros relevantes.</p></div></div>
+          <div class="step-clean"><span>03</span><div><h3>Receba uma análise objetiva</h3><p>Você recebe orientação sobre as possibilidades jurídicas, o que precisa ser comprovado e os riscos envolvidos.</p></div></div>
         </div>
       </div>
     </section>
 
-    
-    <section id="sobre-advogado" class="section about-section">
-      <div class="container about-grid">
-        <div class="about-photo-panel">
-          <img src="jonathan-richena-sobre-advogado.jpg?v=20261024" alt="Jonathan Richena, advogado OAB/SP 544.387" class="about-photo">
+    <section id="sobre-advogado" class="section about-section section-compact about-section-refined">
+      <div class="container about-grid about-grid-clean">
+        <div class="about-photo-panel about-photo-panel-clean">
+          <img src="jonathan-richena-sobre-advogado.jpg?v=20261027" alt="Jonathan Richena, advogado especialista em Direito Trabalhista" class="about-photo">
         </div>
-
-        <div class="about-copy">
+        <div class="about-copy about-copy-clean">
           <span class="section-kicker">SOBRE O ADVOGADO</span>
-          <h2 class="section-title">Jonathan Richena</h2>
-          <p class="section-subtitle">Advogado · OAB/SP 544.387</p>
-
-          <p class="section-description">
-            Sou advogado com atuação voltada principalmente à defesa dos direitos dos trabalhadores,
-            além de atender demandas de Direito do Consumidor e Direito Previdenciário.
+          <h2 class="section-title">Atendimento próximo, análise técnica e comunicação direta.</h2>
+          <p class="about-lead">Ao procurar orientação trabalhista, o trabalhador fala diretamente comigo, <strong>Jonathan Richena</strong>, desde o primeiro contato até a definição da estratégia jurídica.</p>
+          <p class="about-text-refined">
+            Antes de recomendar qualquer medida, analiso os documentos, as mensagens, a jornada, os pagamentos e o contexto da relação de trabalho. A ideia é compreender o que realmente aconteceu e identificar o que pode ser demonstrado pelas provas disponíveis.
           </p>
-
-          <p class="about-text">
-            Minha atuação parte da análise individualizada de cada caso, com atenção aos documentos,
-            às provas e às particularidades da relação jurídica. No Direito Trabalhista, o foco está
-            em orientar e representar trabalhadores em questões como verbas rescisórias, horas extras,
-            FGTS, reconhecimento de vínculo, rescisão indireta, assédio, acidentes e doenças relacionadas ao trabalho.
+          <p class="about-text-refined">
+            O atendimento é conduzido com clareza: explico o que pode ser discutido, quais pontos precisam de prova, quais riscos devem ser considerados e quais caminhos fazem sentido para o caso concreto. Sem respostas padronizadas e sem promessas de resultado.
           </p>
-
-          <p class="about-text">
-            O atendimento é realizado de forma clara e objetiva, buscando que o cliente compreenda
-            o seu caso, as medidas juridicamente possíveis e os riscos envolvidos antes de qualquer decisão.
-          </p>
-
-          <div class="about-facts">
-            <div>
-              <strong>Atuação principal</strong>
-              <span>Direito Trabalhista</span>
+          <div class="about-service-panel" aria-label="Diferenciais do atendimento">
+            <div class="about-principles">
+              <div><span>01</span><strong>Você fala diretamente comigo</strong><p>O primeiro contato, a análise jurídica e a definição dos próximos passos são conduzidos diretamente por mim.</p></div>
+              <div><span>02</span><strong>Análise antes de qualquer medida</strong><p>Documentos, provas, riscos e possibilidades são avaliados antes de indicar qualquer caminho jurídico.</p></div>
+              <div><span>03</span><strong>Clareza durante a condução</strong><p>Você entende o motivo de cada medida e sabe o que está sendo feito em cada etapa do caso.</p></div>
             </div>
-            <div>
-              <strong>Áreas complementares</strong>
-              <span>Consumidor e Previdenciário</span>
+            <div class="about-panel-cta">
+              <div>
+                <strong>Quer entender melhor a sua situação?</strong>
+                <span>Converse diretamente comigo pelo WhatsApp e me conte, de forma breve, o que aconteceu.</span>
+              </div>
+              <a class="btn btn-light whatsapp-link" data-whatsapp-source="sobre_advogado" href="#" rel="noopener">Falar diretamente comigo</a>
             </div>
-            <div>
-              <strong>Atendimento</strong>
-              <span>São Paulo e online</span>
-            </div>
-          </div>
-
-          <div class="about-actions">
-            <a class="btn whatsapp-link" href="#" rel="noopener">Falar diretamente com o advogado</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="outras-areas" class="section">
+    <section id="outras-areas" class="section section-muted section-compact">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading compact-heading">
           <span class="section-kicker">OUTRAS ÁREAS</span>
-          <h2 class="section-title">Atendimento também em Consumidor e Previdenciário</h2>
-          <p class="section-description">
-            O Direito Trabalhista permanece como foco principal do escritório. Demandas selecionadas de consumo e previdenciárias também são analisadas.
-          </p>
+          <h2 class="section-title">Consumidor e Previdenciário</h2>
         </div>
-
-        <div class="secondary-areas">
-          <article class="secondary-card">
-            <span class="section-kicker">CONSUMIDOR</span>
-            <h3>Problemas em relações de consumo</h3>
-            <p>Cobranças indevidas, negativação, falhas em serviços, problemas bancários, comércio eletrônico e outras situações de consumo.</p>
-          </article>
-          <article class="secondary-card">
-            <span class="section-kicker">PREVIDENCIÁRIO</span>
-            <h3>Benefícios e questões perante o INSS</h3>
-            <p>Benefícios por incapacidade, auxílio-acidente, aposentadorias e outras demandas que dependam de análise previdenciária e documental.</p>
-          </article>
+        <div class="secondary-areas secondary-clean">
+          <article class="secondary-card"><h3>Direito do Consumidor</h3><p>Cobranças indevidas, negativação, problemas bancários e falhas na prestação de serviços.</p></article>
+          <article class="secondary-card"><h3>Direito Previdenciário</h3><p>Benefícios por incapacidade, auxílio-acidente, aposentadorias e outras demandas previdenciárias.</p></article>
         </div>
       </div>
     </section>
 
-    <section id="documentos" class="section section-soft">
-      <div class="container docs-grid">
-        <div>
-          <span class="section-kicker">DOCUMENTOS</span>
-          <h2 class="section-title">O que separar para uma primeira análise trabalhista</h2>
-          <p class="section-description">
-            Não é necessário possuir todos os documentos abaixo. A lista serve apenas para facilitar a compreensão inicial do vínculo e do problema relatado.
-          </p>
-          <div style="margin-top:24px">
-            <a class="btn whatsapp-link" href="#" rel="noopener">Enviar relato pelo WhatsApp</a>
+    <section id="duvidas" class="section section-compact faq-section-refined">
+      <div class="container">
+        <div class="faq-shell">
+          <div class="section-heading compact-heading faq-heading-refined">
+            <span class="section-kicker">DÚVIDAS FREQUENTES</span>
+            <h2 class="section-title">As perguntas que mais surgem antes da análise</h2>
+            <p class="section-description">Respostas diretas para situações que costumam gerar dúvida e exigem atenção antes de qualquer decisão.</p>
+          </div>
+          <div class="faq">
+            <details class="faq-item" open>
+              <summary>Quanto tempo a empresa tem para pagar minha rescisão?</summary>
+              <p>A CLT prevê que o pagamento das verbas rescisórias e a entrega dos documentos da rescisão sejam feitos em até <strong>10 dias contados do término do contrato</strong>. Se o prazo passou ou os valores parecem incorretos, é importante conferir o TRCT, saldo de salário, aviso-prévio, 13º, férias + 1/3, FGTS e, quando cabível, a multa de 40%. A modalidade da demissão altera o que é devido.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Meu FGTS não está sendo depositado. O que posso fazer?</summary>
+              <p>O primeiro passo é conferir o extrato no aplicativo FGTS e identificar quais competências estão sem depósito. O recolhimento é obrigação do empregador. A irregularidade pode ser denunciada ao Ministério do Trabalho e também discutida judicialmente. Em situações relevantes ou reiteradas, a falta de FGTS pode inclusive ser analisada como fundamento para <strong>rescisão indireta</strong>. Antes de deixar o emprego, vale avaliar os extratos, o período da irregularidade e as demais provas.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Faço horas extras, mas não tenho cartão de ponto. Ainda posso cobrar?</summary>
+              <p>Sim. Horas extras podem ser demonstradas por outros elementos, como mensagens, e-mails, escalas, registros de acesso, documentos, testemunhas e até inconsistências nos próprios controles da empresa. Quando os registros obrigatórios não são apresentados ou mostram horários invariáveis, isso pode ter efeito importante na prova da jornada. A hora extra deve ser remunerada com adicional de pelo menos <strong>50%</strong>, salvo percentual mais favorável.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Quando a rescisão indireta pode ser cabível?</summary>
+              <p>A rescisão indireta pode ser discutida quando o empregador comete uma falta grave, como descumprimentos contratuais relevantes, irregularidades reiteradas de FGTS ou salários, assédio ou outras condutas que tornem a continuidade do vínculo insustentável. Se reconhecida, pode gerar verbas semelhantes às de uma dispensa sem justa causa. Como a prova e a estratégia mudam de caso para caso, <strong>não é recomendável simplesmente abandonar o emprego sem analisar antes a situação</strong>.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Quanto tempo tenho para entrar com uma ação trabalhista depois de sair da empresa?</summary>
+              <p>Em regra, o trabalhador tem até <strong>2 anos após o fim do contrato</strong> para ajuizar a ação. Dentro desse processo, normalmente podem ser cobrados créditos referentes aos <strong>5 anos anteriores ao ajuizamento</strong>. Esperar pode fazer parcelas mais antigas prescreverem, por isso as datas do vínculo e dos fatos precisam ser conferidas.</p>
+            </details>
           </div>
         </div>
-
-        <div class="document-box">
-          <ul>
-            <li>Carteira de Trabalho Digital e contrato, se houver</li>
-            <li>Holerites e comprovantes de pagamento</li>
-            <li>TRCT e documentos da demissão</li>
-            <li>Extrato do FGTS</li>
-            <li>Cartões ou registros de ponto disponíveis</li>
-            <li>Conversas, e-mails, advertências e comunicados da empresa</li>
-            <li>Atestados, laudos e documentos médicos, quando relacionados ao caso</li>
-            <li>Nome de possíveis testemunhas, quando pertinente</li>
-          </ul>
-        </div>
       </div>
     </section>
 
-    <section class="cta-section">
-      <div class="container cta-box">
-        <div>
-          <span class="cta-kicker">ENTENDA SUA SITUAÇÃO</span>
-          <h2>Está com dúvida sobre seus direitos no trabalho?</h2>
-          <p>
-            Envie um breve relato do que aconteceu. A análise inicial ajuda a identificar quais informações e documentos precisam ser verificados.
-          </p>
-        </div>
-        <a class="btn btn-light whatsapp-link" href="#" rel="noopener">Falar sobre meu caso</a>
-      </div>
-    </section>
-
-    <section id="duvidas" class="section">
-      <div class="container faq-wrap">
-        <div class="section-heading">
-          <span class="section-kicker">DÚVIDAS FREQUENTES</span>
-          <h2 class="section-title">Perguntas comuns de trabalhadores</h2>
-        </div>
-
-        <div class="faq">
-          <details>
-            <summary>Fui demitido. Como saber se a rescisão está correta?</summary>
-            <p>É preciso conferir a modalidade da dispensa, tempo de serviço, remuneração, TRCT, comprovantes, FGTS e demais parcelas relacionadas ao vínculo.</p>
-          </details>
-          <details>
-            <summary>Faço horas extras, mas não tenho os cartões de ponto. Ainda é possível analisar?</summary>
-            <p>Sim. A análise não depende exclusivamente dos cartões de ponto. Mensagens, horários, documentos, testemunhas e outras provas podem ser relevantes conforme o caso.</p>
-          </details>
-          <details>
-            <summary>Posso simplesmente parar de trabalhar e pedir rescisão indireta?</summary>
-            <p>A rescisão indireta exige análise cuidadosa das faltas atribuídas ao empregador e das provas existentes. Tomar decisões antes de orientação pode gerar consequências, por isso o caso deve ser avaliado individualmente.</p>
-          </details>
-          <details>
-            <summary>Trabalhei sem registro. Posso discutir vínculo de emprego?</summary>
-            <p>A possibilidade depende de como o trabalho acontecia na prática, inclusive pessoalidade, habitualidade, remuneração e subordinação. Documentos e testemunhas podem ser importantes.</p>
-          </details>
-          <details>
-            <summary>O atendimento pode ser feito online?</summary>
-            <p>Sim. O relato inicial, envio de documentos e orientações podem ser realizados online, conforme as necessidades do caso.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <section id="contato" class="contact-section">
-      <div class="container contact-grid">
-        <div>
-          <span class="section-kicker">CONTATO</span>
-          <h2 class="section-title">Jonathan Richena Advocacia</h2>
-          <p class="section-subtitle">Direito Trabalhista · Consumidor · Previdenciário</p>
-          <p class="contact-meta">
-            OAB/SP nº <strong>544.387</strong><br>
-            São Paulo/SP · Atendimento online
-          </p>
-        </div>
-
-        <div class="contact-card">
-          <span class="section-kicker">PRIMEIRO CONTATO</span>
-          <h3>Conte o que aconteceu no seu trabalho</h3>
-          <p>
-            Informe, de forma resumida, onde trabalhou, por quanto tempo, como ocorreu o problema e se ainda está empregado ou já houve desligamento.
-            Se tiver documentos, eles podem ser enviados na sequência.
-          </p>
-          <a class="btn whatsapp-link" href="#" rel="noopener">Iniciar conversa no WhatsApp</a>
+    <section id="contato" class="contact-section contact-section-refined">
+      <div class="container">
+        <div class="contact-shell">
+          <div class="contact-intro">
+            <span class="section-kicker">CONTATO</span>
+            <h2 class="section-title">Seu caso começa com uma conversa direta</h2>
+            <p class="section-description">Explique em poucas linhas o que aconteceu. O primeiro passo é entender os fatos, os documentos disponíveis e o que você precisa resolver.</p>
+            <div class="contact-points">
+              <span>Atendimento online em todo o Brasil</span>
+              <span>Documentos podem ser enviados pelo WhatsApp</span>
+            </div>
+          </div>
+          <div class="contact-card contact-card-refined">
+            <span class="contact-card-kicker">FALE DIRETAMENTE COMIGO</span>
+            <strong>Jonathan Richena</strong>
+            <span class="contact-line">Advogado Trabalhista Especialista · OAB/SP 544.387</span>
+            <a class="btn whatsapp-link" data-whatsapp-source="contato" href="#" rel="noopener">Iniciar conversa no WhatsApp</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
+
+  <a class="mobile-whatsapp-bar whatsapp-link" data-whatsapp-source="mobile_sticky" href="#" rel="noopener" aria-label="Falar com o advogado pelo WhatsApp">
+    <span>Falar com o advogado</span><strong>WhatsApp</strong>
+  </a>
 
   <footer>
     <div class="container footer-content">
@@ -1865,7 +2963,7 @@ img {
         <span class="footer-monogram" aria-hidden="true">JR</span>
         <div class="footer-lockup">
           <strong>Jonathan Richena Advocacia</strong>
-          <p>Direito Trabalhista · Consumidor · Previdenciário · OAB/SP 544.387</p>
+          <p>Direito Trabalhista · Consumidor · Previdenciário · OAB/SP 544.387 · Atendimento em todo o Brasil</p>
         </div>
       </div>
       <div class="footer-info">
@@ -1882,7 +2980,7 @@ img {
 const WHATSAPP_NUMBER = "5511973969770";
 
 const MESSAGE = encodeURIComponent(
-  "Olá, Dr. Jonathan. Gostaria de entender melhor meu caso trabalhista. Posso explicar o que aconteceu?"
+  "Olá, Dr. Jonathan. Gostaria de orientação sobre meu caso trabalhista."
 );
 
 // Google Ads: registrar a conversão apenas quando um link do WhatsApp for clicado.
@@ -1892,7 +2990,23 @@ document.querySelectorAll(".whatsapp-link").forEach((link) => {
   link.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${MESSAGE}`;
   link.target = "_blank";
   link.addEventListener("click", () => {
+    const source = link.dataset.whatsappSource || link.closest("section")?.id || "site";
+
+    // Evento separado para identificar de qual ponto do site veio o clique.
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "whatsapp_click",
+      whatsapp_source: source
+    });
+
     if (typeof window.gtag === "function") {
+      window.gtag("event", "whatsapp_click", {
+        whatsapp_source: source,
+        event_category: "engagement",
+        event_label: "WhatsApp"
+      });
+
+      // Conversão do Google Ads: representa clique no WhatsApp, não mensagem enviada.
       window.gtag("event", "conversion", {
         send_to: "AW-18434877988/W7GyCMykhvAcEKTUt9ZE",
         value: 1.0,

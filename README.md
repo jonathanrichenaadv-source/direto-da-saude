@@ -45,3 +45,24 @@ jonathanrichena.adv.br
 - `sitemap.xml` ## GitHub configurado - Usuário: `jonathanrichenaadv-source`
 - Repositório sugerido/configurado: `direito-saude`
 - URL esperada do site: `https://jonathanrichenaadv-source.github.io/direito-saude/` Se você usar outro nome de repositório, os links de SEO precisarão ser atualizados.
+
+
+Atualização 26/10/2026: refinamento visual premium, nova seção de atuação em alto contraste e apresentação pessoal reescrita.
+
+
+Atualização V5 (27/10/2026): revisão geral de legibilidade e contraste, atendimento com fundo azul e cards escuros, seção Sobre reescrita e legenda sob a foto removida.
+
+
+Atualização V6: hero limpo abaixo do CTA e seção Sobre revisada para destacar atendimento direto com Jonathan Richena.
+
+
+Atualização V7: bloco Sobre refinado, diferenciais com maior contraste, CTA integrado e transição visual elegante para Outras áreas.
+
+
+Atualização V8: seções Dúvidas Frequentes e Contato refinadas visualmente.
+
+
+Atualização V9: contato simplificado e FAQ trabalhista revisado com perguntas de alta intenção de busca, respostas específicas e FAQPage estruturado para SEO.
+
+
+Atualização V11: delimitadores simplificados, sem molduras grandes ou barras douradas; seção Sobre limpa.

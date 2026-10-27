@@ -4,12 +4,40 @@
 const WHATSAPP_NUMBER = "5511973969770";
 
 const MESSAGE = encodeURIComponent(
-  "Olá, Dr. Jonathan. Gostaria de solicitar uma análise sobre medicamento de alto custo ou tratamento negado."
+  "Olá, Dr. Jonathan. Gostaria de entender melhor meu caso trabalhista. Posso explicar o que aconteceu?"
 );
 
+// Google Ads: registrar a conversão apenas quando um link do WhatsApp for clicado.
+// Esta conversão mede cliques, não mensagens enviadas nem contratos firmados.
+// A tag geral do Google Ads já está instalada no <head> de index.html.
 document.querySelectorAll(".whatsapp-link").forEach((link) => {
   link.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${MESSAGE}`;
   link.target = "_blank";
+  link.addEventListener("click", () => {
+    const source = link.dataset.whatsappSource || link.closest("section")?.id || "site";
+
+    // Evento separado para identificar de qual ponto do site veio o clique.
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "whatsapp_click",
+      whatsapp_source: source
+    });
+
+    if (typeof window.gtag === "function") {
+      window.gtag("event", "whatsapp_click", {
+        whatsapp_source: source,
+        event_category: "engagement",
+        event_label: "WhatsApp"
+      });
+
+      // Conversão do Google Ads: representa clique no WhatsApp, não mensagem enviada.
+      window.gtag("event", "conversion", {
+        send_to: "AW-18434877988/W7GyCMykhvAcEKTUt9ZE",
+        value: 1.0,
+        currency: "BRL"
+      });
+    }
+  });
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
@@ -64,6 +92,7 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
   });
 });
 
+  
 
 // Impede seleção, cópia, recorte, colagem, menu de contexto e arraste de imagens.
 // Links, botões, navegação e WhatsApp continuam funcionando normalmente.
