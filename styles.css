@@ -2660,3 +2660,79 @@ details p { color: #3a4a5f; font-size: .98rem; }
     box-shadow: 0 5px 14px rgba(11,31,58,.04);
   }
 }
+
+
+
+/* V12 — BOTÃO FLUTUANTE MOBILE COMPACTO */
+@media (max-width: 760px) {
+  body { padding-bottom: 66px !important; }
+
+  .mobile-whatsapp-bar {
+    position: fixed !important;
+    left: auto !important;
+    right: 14px !important;
+    bottom: calc(14px + env(safe-area-inset-bottom, 0px)) !important;
+    z-index: 1100 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    width: auto !important;
+    min-width: 0 !important;
+    min-height: 44px !important;
+    padding: 7px 13px 7px 8px !important;
+    border-radius: 999px !important;
+    background: rgba(11,31,58,.96) !important;
+    color: #fff !important;
+    border: 1px solid rgba(255,255,255,.16) !important;
+    box-shadow: 0 10px 26px rgba(7,23,43,.24) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    text-decoration: none !important;
+    transform: translateZ(0);
+  }
+
+  .mobile-whatsapp-bar:hover,
+  .mobile-whatsapp-bar:active {
+    background: #102b4e !important;
+  }
+
+  .mobile-whatsapp-icon {
+    display: inline-grid !important;
+    place-items: center !important;
+    flex: 0 0 30px !important;
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50% !important;
+    background: #1f5faf !important;
+    color: #fff !important;
+    font-size: .78rem !important;
+    font-weight: 800 !important;
+    line-height: 1 !important;
+  }
+
+  .mobile-whatsapp-label {
+    display: inline-block !important;
+    color: #fff !important;
+    font-size: .79rem !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+    letter-spacing: -.01em !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .mobile-whatsapp-bar {
+    right: 10px !important;
+    bottom: calc(10px + env(safe-area-inset-bottom, 0px)) !important;
+    min-height: 42px !important;
+    padding: 6px 11px 6px 7px !important;
+  }
+  .mobile-whatsapp-icon {
+    flex-basis: 28px !important;
+    width: 28px !important;
+    height: 28px !important;
+  }
+  .mobile-whatsapp-label { font-size: .75rem !important; }
+}

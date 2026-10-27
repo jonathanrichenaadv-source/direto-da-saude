@@ -30,3 +30,6 @@ Atualização V9: contato simplificado e FAQ trabalhista revisado com perguntas 
 
 
 Atualização V11: delimitadores simplificados, sem molduras grandes ou barras douradas; seção Sobre limpa.
+
+
+Atualização V12: botão flutuante mobile do WhatsApp redesenhado em formato compacto e fixo.
